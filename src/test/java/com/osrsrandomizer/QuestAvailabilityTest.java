@@ -10,6 +10,19 @@ import static org.junit.Assert.*;
 
 public class QuestAvailabilityTest
 {
+    @Test public void fracturedArchiveRequiresMembershipAndWhileGuthixSleeps()
+    {
+        for (QuestState state : QuestState.values())
+        {
+            Map<Quest, QuestState> states = Collections.singletonMap(Quest.WHILE_GUTHIX_SLEEPS, state);
+            assertEquals(state == QuestState.FINISHED ? null : "Complete While Guthix Sleeps",
+                new QuestAvailability(true, 1, states, true, true).reason(Category.RAIDS, "tfa"));
+            assertEquals("Members only",
+                new QuestAvailability(true, 1, states, true, false).reason(Category.RAIDS, "tfa"));
+        }
+        assertEquals("Waiting for quest data", snapshot(true, 1, Collections.emptyMap()).reason(Category.RAIDS, "tfa"));
+    }
+
     @Test public void skillQuestGatesUnlockOnlyAfterCompletion()
     {
         for (QuestState state : QuestState.values())
@@ -114,7 +127,7 @@ public class QuestAvailabilityTest
             if (snapshot.isChecked(category, activity.getId())) checked++;
             assertNull(snapshot.reason(category, activity.getId()));
         }
-        assertEquals(17, checked);
+        assertEquals(18, checked);
     }
 
     @Test public void mediumWildernessDiaryBlocksOnlyTheThreeSinglesBosses()

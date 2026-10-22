@@ -217,7 +217,7 @@ public class RandomizerPanelTest
             assertFalse(button(panel, "Draw").isEnabled());
             assertTrue(saved.get(Category.SKILLS).isEmpty());
             button(panel, "Raids").doClick();
-            assertEquals(3, cards(panel).size());
+            assertEquals(4, cards(panel).size());
             assertTrue(button(panel, "Draw").isEnabled());
             button(panel, "Draw").doClick();
             for (int tick = 0; tick < 9; tick++) panel.advanceAnimation();

@@ -1,6 +1,6 @@
-# OSRS Randomizer — RuneLite 0.1.0
+# OSRS Randomizer — RuneLite 0.1.1
 
-Prototype Java autonome : choisir sa prochaine activité depuis le panneau latéral RuneLite. Interface anglaise, noms d’activités repris du catalogue de l’application Electron 1.0.1 : **24 Skills, 53 Bosses et 3 Raids**.
+Prototype Java autonome : choisir sa prochaine activité depuis le panneau latéral RuneLite. Interface anglaise, noms d’activités repris du catalogue de l’application Electron 1.0.1 : **24 Skills, 53 Bosses et 4 Raids**.
 
 ## Utilisation
 
@@ -34,7 +34,7 @@ Pour un compte Jagex, suivre soi-même le [guide officiel RuneLite](https://gith
 
 ## Validation
 
-Vingt-trois tests automatisés couvrent le catalogue, les sélections sauvegardées, les contrôles Swing, les catégories indépendantes et les changements de sélection. Le test du moteur effectue 500 tirages pour chaque taille de sélection de 1 à 24, soit 12 000 tirages.
+Vingt-cinq tests automatisés couvrent le catalogue, les sélections sauvegardées, les contrôles Swing, les catégories indépendantes et les changements de sélection. Le test du moteur effectue 500 tirages pour chaque taille de sélection de 1 à 24, soit 12 000 tirages.
 
 À vérifier manuellement dans RuneLite :
 
@@ -59,7 +59,7 @@ Aucun dépôt distant, aucune publication et aucune soumission au Plugin Hub n�
 
 ## Icônes
 
-Les catégories, les activités et le résultat affichent les icônes reprises des ressources de l’application Electron. Les 83 images sont embarquées en PNG transparents de 32 × 32 pixels maximum de contenu, proportions conservées. Aucun téléchargement au moment du tirage. Les visuels OSRS appartiennent à leurs titulaires respectifs, notamment Jagex ; la licence BSD du code ne leur attribue pas une nouvelle licence.
+Les catégories, les activités et le résultat affichent les icônes reprises des ressources de l’application Electron. Les 84 images sont embarquées en PNG transparents de 32 × 32 pixels maximum de contenu, proportions conservées. Aucun téléchargement au moment du tirage. Les visuels OSRS appartiennent à leurs titulaires respectifs, notamment Jagex ; la licence BSD du code ne leur attribue pas une nouvelle licence.
 
 
 La sélection est présentée en une liste de lignes compactes de 38 pixels, avec des icônes de 20 pixels, avec des onglets Skills / Bosses / Raids. Les noms longs reviennent à la ligne. Toute l’interface du plugin est en anglais ; ce guide reste en français.
@@ -81,7 +81,7 @@ Validation manuelle : essayer Draw avec animation, vérifier l’ordre des cinq 
 
 ## Filtre selon le personnage
 
-Dans les réglages RuneLite du plugin (engrenage OSRS Randomizer), utiliser **Available for my character** pour exclure les activités bloquées par l’abonnement et par les quêtes et diaries pris en charge. Les règles de quête et de diary couvrent 17 activités (14 bosses, Tombs of Amascut et 2 skills), dont Artio, Spindel et Calvar’ion qui nécessitent le Wilderness Diary medium. Les lignes bloquées sont grisées ; leur infobulle indique la quête ou le diary à terminer. Les sélections personnelles sont conservées. Le filtre attend la connexion du personnage et se met à jour environ toutes les six secondes.
+Dans les réglages RuneLite du plugin (engrenage OSRS Randomizer), utiliser **Available for my character** pour exclure les activités bloquées par l’abonnement et par les quêtes et diaries pris en charge. Les règles de quête et de diary couvrent 18 activités (14 bosses, 2 raids et 2 skills), dont Artio, Spindel et Calvar’ion qui nécessitent le Wilderness Diary medium. Les lignes bloquées sont grisées ; leur infobulle indique la quête ou le diary à terminer. Les sélections personnelles sont conservées. Le filtre attend la connexion du personnage et se met à jour environ toutes les six secondes.
 
 La couverture reste partielle : les niveaux et autres conditions ne sont pas encore vérifiés. Les activités non prises en charge restent disponibles, avec une infobulle explicite. Voir [QUEST-REQUIREMENTS.md](QUEST-REQUIREMENTS.md) pour les règles, sources et vérifications manuelles. Cette option est activée par défaut et ne figure plus dans le panneau principal. Un choix déjà sauvegardé est conservé. Les changements prennent effet immédiatement.
 
@@ -105,3 +105,6 @@ Les cinq derniers tirages de chaque catégorie sont stockés par personnage et p
 Un changement de personnage charge son propre historique. La déconnexion masque le précédent jusqu’à une nouvelle connexion. Les tirages effectués sans connexion, lorsque le filtre est désactivé, restent temporaires et ne sont pas attribués au dernier compte utilisé. Les anciens historiques perdus avant cette modification ne sont pas récupérables.
 
 Validation manuelle : faire plusieurs tirages connecté, fermer normalement le client, le relancer et se reconnecter au même personnage ; vérifier Recent draws et le prochain résultat. Répéter avec un autre personnage pour vérifier la séparation.
+
+## Version 0.1.1
+The Fractured Archive rejoint l’onglet Raids. Le filtre vérifie l’abonnement et While Guthix Sleeps ; une icône générique de raid est utilisée. Les sélections existantes restent intactes : cliquer sur le nouveau raid ou sur All pour l’ajouter aux tirages. La miniquête d’introduction n’est pas vérifiée.

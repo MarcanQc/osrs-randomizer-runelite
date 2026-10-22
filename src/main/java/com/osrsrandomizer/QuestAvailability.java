@@ -35,6 +35,7 @@ final class QuestAvailability
         rules.put("bosses:amoxliatl", Quest.THE_HEART_OF_DARKNESS);
         rules.put("bosses:deranged_archaeologist", Quest.BONE_VOYAGE);
         rules.put("raids:toa", Quest.BENEATH_CURSED_SANDS);
+        rules.put("raids:tfa", Quest.WHILE_GUTHIX_SLEEPS);
         REQUIREMENTS = Collections.unmodifiableMap(rules);
     }
 

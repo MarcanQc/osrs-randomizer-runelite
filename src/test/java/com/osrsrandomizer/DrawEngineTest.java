@@ -79,8 +79,20 @@ public class DrawEngineTest
     @Test public void catalogueIdsAreUniqueWithinEachCategory()
     {
         assertEquals(53, Category.BOSSES.getActivities().size());
-        assertEquals(3, Category.RAIDS.getActivities().size());
+        assertEquals(4, Category.RAIDS.getActivities().size());
         for (Category category : Category.values())
             assertEquals(category.getActivities().size(), SelectionCodec.decode(category, null).size());
+    }
+
+    @Test public void newRaidPreservesOldSelectionsAndCanBeDrawnAndSaved()
+    {
+        assertEquals(new LinkedHashSet<>(Arrays.asList("cox", "tob", "toa")),
+            SelectionCodec.decode(Category.RAIDS, "cox,tob,toa"));
+        assertFalse(SelectionCodec.decode(Category.RAIDS, "").contains("tfa"));
+        assertTrue(SelectionCodec.decode(Category.RAIDS, null).contains("tfa"));
+        Activity raid = new DrawEngine(new Random(1)).draw(Category.RAIDS, Collections.singleton("tfa")).get();
+        assertEquals("The Fractured Archive", raid.getName());
+        assertEquals("tfa", HistoryCodec.encode(HistoryCodec.decode(Category.RAIDS, "tfa")));
+        assertNotNull(ActivityIcons.class.getResource("/com/osrsrandomizer/icons/raids/tfa.png"));
     }
 }

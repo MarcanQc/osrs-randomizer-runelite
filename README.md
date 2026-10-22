@@ -31,11 +31,11 @@ Requires a JDK (tested with JDK 21; Java 11 bytecode target). The first build do
 
 On Windows use gradlew.bat, or double-click Lancer-RuneLite.bat to launch the development client. For Jagex accounts, follow [RuneLite's official guide](https://github.com/runelite/runelite/wiki/Using-Jagex-Accounts).
 
-The plugin is being prepared for Plugin Hub review and is not yet available there. The built plugin JAR is not a standalone installer.
+Install OSRS Randomizer from RuneLite's Plugin Hub. New updates require Plugin Hub review before distribution. The built plugin JAR is not a standalone installer.
 
 ## Validation and data
 
-23 automated tests cover selection persistence, draws, repeat protection, character gates, animation cancellation, and history restoration. The author has also confirmed history persistence and character filtering in the development client.
+25 automated tests cover selection persistence, draws, repeat protection, character gates, animation cancellation, and history restoration. The author has also confirmed history persistence and character filtering in the development client.
 
 The plugin does not automate gameplay or make network requests. It reads character quest, diary and membership state through RuneLite's client API. Selection IDs and recent draw IDs are stored using RuneLite ConfigManager; history keys include the character's account hash. RuneLite's own configuration storage and sync behavior applies. No login credentials are read or stored by the plugin.
 
@@ -46,3 +46,6 @@ Code: [BSD 2-Clause](LICENSE), MarcanQc. Built from the [RuneLite example plugin
 OSRS activity art and the OSRS elements of the logo belong to their respective rights holders, including Jagex; the code license does not relicense that artwork. This is an unofficial fan project, not affiliated with Jagex or RuneLite.
 
 [Guide en français](README.fr.md)
+
+## 0.1.1 — The Fractured Archive
+Adds the fourth raid with membership and While Guthix Sleeps checks, using the bundled generic raid icon. Existing saved selections stay unchanged: click The Fractured Archive or All in the Raids tab to include it. Fresh selections include all four raids. The introductory miniquest and other encounter-specific conditions are not checked.

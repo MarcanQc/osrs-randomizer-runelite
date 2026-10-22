@@ -24,6 +24,7 @@ The following quests must be finished. Boss entries refer to repeatable post-que
 | Amoxliatl | The Heart of Darkness |
 | Deranged Archaeologist | Bone Voyage |
 | Tombs of Amascut | Beneath Cursed Sands |
+| The Fractured Archive | While Guthix Sleeps |
 
 Corrupted Gauntlet can have additional access requirements; only its quest gate is checked here. Zulrah, Perilous Moons, Nex, Doom of Mokhaiotl, Theatre of Blood and other entries outside the tables are deliberately unmapped pending verification of their exact access rules. Do not interpret a selectable entry as a verified accessible activity.
 
@@ -67,7 +68,7 @@ Automated tests cover requirement states, immutable snapshots, preserved selecti
 | Spindel | Medium Wilderness Diary |
 | Calvar'ion | Medium Wilderness Diary |
 
-The diary rules cover three bosses. With the two skill quest gates below, 17 activities have supported quest or diary checks. The filter reads RuneLite's WILDERNESS_DIARY_MEDIUM_COMPLETE flag. Unknown diary data keeps these entries blocked until refreshed. Callisto, Venenatis and Vet'ion do not inherit this restriction.
+The diary rules cover three bosses. With the two skill quest gates below, 18 activities have supported quest or diary checks. The filter reads RuneLite's WILDERNESS_DIARY_MEDIUM_COMPLETE flag. Unknown diary data keeps these entries blocked until refreshed. Callisto, Venenatis and Vet'ion do not inherit this restriction.
 
 Sources: [OSRS Wiki: Wilderness](https://oldschool.runescape.wiki/w/Wilderness) documents the medium diary gate for the weaker variants; [RuneLite VarbitID](https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/gameval/VarbitID.java) defines the completion flag.
 
@@ -80,4 +81,7 @@ Membership is required for Agility, Construction, Farming, Fletching, Herblore, 
 
 The plugin reads RuneLite's [MEMBERSHIP_DAYS](https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/VarPlayer.java) after login ticks. Positive subscription days or a members world indicate membership; zero days on a free world indicates a free account. Unknown data keeps member content blocked pending refresh. Membership is checked before quest and diary gates, so free accounts see Members only.
 
-Manual checks: compare a free account and a member account on a free world; check a member missing Pandemonium or Druidic Ritual; confirm unlocks and saved choices after completion or subscription change. All 23 automated tests pass; live account reads still require in-game validation.
+Manual checks: compare a free account and a member account on a free world; check a member missing Pandemonium or Druidic Ritual; confirm unlocks and saved choices after completion or subscription change. All 25 automated tests pass; live account reads still require in-game validation.
+
+## The Fractured Archive — reviewed 21 October 2026
+[Jagex's raid page](https://osrs.runescape.com/raids/fractured-archive) confirms the While Guthix Sleeps completion requirement. The existing membership check applies. The [OSRS Wiki](https://oldschool.runescape.wiki/w/The_Fractured_Archive) describes an introductory miniquest triggered on first entry; this plugin does not check its progression or other encounter-specific conditions.

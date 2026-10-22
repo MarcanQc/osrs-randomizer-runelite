@@ -89,7 +89,8 @@ public enum Category
     RAIDS("raids", "Raids", Arrays.asList(
         new Activity("cox", "Chambers of Xeric"),
         new Activity("tob", "Theatre of Blood"),
-        new Activity("toa", "Tombs of Amascut")));
+        new Activity("toa", "Tombs of Amascut"),
+        new Activity("tfa", "The Fractured Archive")));
 
     private final String key;
     private final String label;
