@@ -124,6 +124,7 @@ public class QuestAvailabilityTest
         int checked = 0;
         for (Category category : Category.values()) for (Activity activity : category.getActivities())
         {
+            if (category == Category.DIARIES) continue; // Diary completion has separate coverage.
             if (snapshot.isChecked(category, activity.getId())) checked++;
             assertNull(snapshot.reason(category, activity.getId()));
         }

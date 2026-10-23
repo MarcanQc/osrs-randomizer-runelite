@@ -90,7 +90,8 @@ public enum Category
         new Activity("cox", "Chambers of Xeric"),
         new Activity("tob", "Theatre of Blood"),
         new Activity("toa", "Tombs of Amascut"),
-        new Activity("tfa", "The Fractured Archive")));
+        new Activity("tfa", "The Fractured Archive"))),
+    DIARIES("diaries", "Diaries", DiaryCatalog.ACTIVITIES);
 
     private final String key;
     private final String label;

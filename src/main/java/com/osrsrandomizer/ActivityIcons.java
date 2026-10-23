@@ -17,6 +17,7 @@ final class ActivityIcons
 
     ImageIcon activity(Category category, Activity activity, int size)
     {
+
         return load(category.getKey() + "/" + activity.getId(), size);
     }
 
@@ -37,7 +38,10 @@ final class ActivityIcons
                 {
                     Graphics2D g = target.createGraphics();
                     g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
-                    g.drawImage(source, 0, 0, size, size, null);
+                    double scale = Math.min((double) size / source.getWidth(), (double) size / source.getHeight());
+                    int width = Math.max(1, (int) Math.round(source.getWidth() * scale));
+                    int height = Math.max(1, (int) Math.round(source.getHeight() * scale));
+                    g.drawImage(source, (size - width) / 2, (size - height) / 2, width, height, null);
                     g.dispose();
                 }
             }

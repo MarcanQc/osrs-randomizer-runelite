@@ -9,6 +9,59 @@ import static org.junit.Assert.*;
 
 public class RandomizerPanelTest
 {
+    @Test public void diaryCompletionAndAccountSwitchPreserveSelectionAndHistory() throws Exception
+    {
+        SwingUtilities.invokeAndWait(() ->
+        {
+            Map<String, String> saved = new HashMap<>();
+            SelectionStore store = new SelectionStore()
+            {
+                public Set<String> load(Category c) { return Collections.singleton("ardougne_easy"); }
+                public void save(Category c, Set<String> ids) { fail("Sync must not overwrite choices"); }
+                public String loadHistory(long account, Category c) { return saved.get(account + c.getKey()); }
+                public void saveHistory(long account, Category c, String value) { saved.put(account + c.getKey(), value); }
+            };
+            RandomizerPanel panel = new RandomizerPanel(new DrawEngine(new Random(1)), store);
+            try
+            {
+                button(panel, "Diaries").doClick();
+                assertEquals(48, cards(panel).size());
+                assertFalse(button(panel, "Draw").isEnabled());
+                Map<String, String> missing = new HashMap<>(DiaryRequirementsTest.eligible());
+                missing.put("ardougne_easy", "5 Thieving; Complete Biohazard");
+                QuestAvailability blocked = new QuestAvailability(true, 1, Collections.emptyMap(), false, true,
+                    Collections.singletonMap("ardougne_easy", false), missing);
+                missing.clear(); // The published snapshot must not change with the source map.
+                panel.updateAvailability(blocked);
+                assertFalse(button(panel, "Draw").isEnabled());
+                assertTrue(cards(panel).get(0).getToolTipText().contains("Complete Biohazard"));
+                assertTrue(cards(panel).get(0).getText().contains("(+1 more)"));
+                panel.setQuestFilterEnabled(false);
+                assertTrue(button(panel, "Draw").isEnabled());
+                panel.setQuestFilterEnabled(true);
+                assertFalse(button(panel, "Draw").isEnabled());
+                panel.updateAvailability(new QuestAvailability(true, 1, Collections.emptyMap(), false, true,
+                    Collections.singletonMap("ardougne_easy", false), DiaryRequirementsTest.eligible()));
+                assertTrue(button(panel, "Draw").isEnabled());
+                button(panel, "Draw").doClick();
+                assertEquals("ardougne_easy", saved.get("1diaries"));
+                panel.updateAvailability(new QuestAvailability(true, 1, Collections.emptyMap(), false, true,
+                    Collections.singletonMap("ardougne_easy", true)));
+                assertFalse(button(panel, "Draw").isEnabled());
+                assertEquals("Diary already completed", cards(panel).get(0).getToolTipText());
+                panel.updateAvailability(new QuestAvailability(true, 2, Collections.emptyMap(), false, true,
+                    Collections.singletonMap("ardougne_easy", false), DiaryRequirementsTest.eligible()));
+                assertTrue(button(panel, "Draw").isEnabled());
+                assertEquals("No draws yet", ((JLabel) history(panel).getComponent(0)).getText());
+                panel.updateAvailability(QuestAvailability.unavailable());
+                assertFalse(button(panel, "Draw").isEnabled());
+                panel.setQuestFilterEnabled(false);
+                assertTrue(button(panel, "Draw").isEnabled());
+            }
+            finally { panel.dispose(); }
+        });
+    }
+
     @Test public void historySurvivesPanelRestartAndStaysSeparateForEachCharacter() throws Exception
     {
         SwingUtilities.invokeAndWait(() ->

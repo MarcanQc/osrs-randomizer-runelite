@@ -27,8 +27,8 @@ import net.runelite.client.callback.ClientThread;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 
-@PluginDescriptor(name = "OSRS Randomizer", description = "Choose your next skill, boss or raid",
-    tags = {"random", "skills", "bosses", "raids"})
+@PluginDescriptor(name = "OSRS Randomizer", description = "Choose your next skill, boss, raid or diary",
+    tags = {"random", "skills", "bosses", "raids", "diaries"})
 public class OsrsRandomizerPlugin extends Plugin
 {
     private static final String CONFIG_GROUP = "osrsrandomizer";
@@ -169,7 +169,29 @@ public class OsrsRandomizerPlugin extends Plugin
                 client.getWorldType().contains(WorldType.MEMBERS));
         }
         catch (RuntimeException ignored) { /* Retry unknown membership on the next refresh. */ }
-        publish(new QuestAvailability(true, client.getAccountHash(), states, wildernessMediumComplete, member));
+        Map<String, Boolean> completedDiaries = new java.util.LinkedHashMap<>();
+        DiaryCatalog.COMPLETION_VARBITS.forEach((id, varbit) ->
+        {
+            try { completedDiaries.put(id, client.getVarbitValue(varbit) == 1); }
+            catch (RuntimeException ignored) { /* Retry missing diary data on the next refresh. */ }
+        });
+        Map<net.runelite.api.Skill, Integer> levels = new EnumMap<>(net.runelite.api.Skill.class);
+        for (net.runelite.api.Skill skill : net.runelite.api.Skill.values())
+        {
+            if (skill == net.runelite.api.Skill.OVERALL) continue;
+            try { levels.put(skill, client.getRealSkillLevel(skill)); }
+            catch (RuntimeException ignored) { /* Missing skill data remains blocked. */ }
+        }
+        Integer combat = null;
+        Integer questPoints = null;
+        try
+        {
+            combat = client.getLocalPlayer().getCombatLevel();
+            questPoints = client.getVarpValue(net.runelite.api.gameval.VarPlayerID.QP);
+        }
+        catch (RuntimeException ignored) { /* Retry after the next refresh. */ }
+        publish(new QuestAvailability(true, client.getAccountHash(), states, wildernessMediumComplete, member, completedDiaries,
+            DiaryRequirements.evaluate(levels, states, combat, questPoints)));
     }
 
     private void publish(QuestAvailability snapshot)

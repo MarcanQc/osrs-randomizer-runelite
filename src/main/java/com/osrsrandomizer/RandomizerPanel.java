@@ -74,14 +74,15 @@ final class RandomizerPanel extends PluginPanel
         JPanel controls = new JPanel();
         controls.setOpaque(false);
         controls.setLayout(new javax.swing.BoxLayout(controls, javax.swing.BoxLayout.Y_AXIS));
-        JPanel tabs = new JPanel(new GridLayout(1, 3, 3, 0));
+        JPanel tabs = new JPanel(new GridLayout(1, Category.values().length, 3, 0));
         tabs.setOpaque(false);
         ButtonGroup group = new ButtonGroup();
         for (Category c : Category.values())
         {
             JToggleButton tab = tile(c.toString());
             tab.setIcon(icons.category(c));
-            tab.setPreferredSize(new Dimension(66, 50));
+            tab.setFont(tab.getFont().deriveFont(10f));
+            tab.setPreferredSize(new Dimension(50, 50));
             tab.setSelected(c == category);
             tab.addActionListener(e ->
             {
@@ -193,6 +194,12 @@ final class RandomizerPanel extends PluginPanel
         rebuild();
     }
 
+    private static String shortReason(String reason)
+    {
+        String[] parts = reason.split("; ");
+        return parts[0] + (parts.length > 1 ? " (+" + (parts.length - 1) + " more)" : "");
+    }
+
     private void rebuild()
     {
         cancelAnimation();
@@ -208,7 +215,7 @@ final class RandomizerPanel extends PluginPanel
             JToggleButton card = tile("<html><div style='width:125px'>"
                 + (reason == null ? activity.getName() : "<font color='#c6c0b4'>" + activity.getName() + "</font>")
                 + (reason == null ? "" : "<br><font color='#d8bc7c'><small>"
-                    + (locked ? reason : "Checking requirements...")
+                    + (locked ? shortReason(reason) : "Checking requirements...")
                     + "</small></font>") + "</div></html>");
             card.setHorizontalAlignment(SwingConstants.LEFT);
             card.setHorizontalTextPosition(SwingConstants.RIGHT);
@@ -225,7 +232,7 @@ final class RandomizerPanel extends PluginPanel
             card.setAlignmentX(0f);
             card.setSelected(included);
             card.setEnabled(reason == null);
-            card.setToolTipText(reason != null ? reason : activity.getName() + (included ? " — included" : " — excluded")
+            card.setToolTipText(reason != null ? (reason.contains("; ") ? "<html>" + reason.replace("; ", "<br>") + "</html>" : reason) : activity.getName() + (included ? " — included" : " — excluded")
                 + (questFilterEnabled && !availability.isChecked(category, activity.getId())
                     ? " (requirements not checked)" : ""));
             card.addActionListener(e ->

@@ -1,10 +1,10 @@
 # OSRS Randomizer
 
-A RuneLite side-panel plugin that picks your next skill, boss or raid from your own selection.
+A RuneLite side-panel plugin that picks your next skill, boss, raid or diary from your own selection.
 
 ## Features
 
-- Compact Skills, Bosses and Raids tabs with activity icons.
+- Compact Skills, Bosses, Raids and Diaries tabs with activity icons.
 - Include or exclude activities; saved selections and All / None controls.
 - One-click draws with a short animation and repeat protection. The last three results are avoided where the selection allows it.
 - Five recent draws per category, saved separately for each character and restored after login. Repeat protection survives restarts.
@@ -35,7 +35,7 @@ Install OSRS Randomizer from RuneLite's Plugin Hub. New updates require Plugin H
 
 ## Validation and data
 
-25 automated tests cover selection persistence, draws, repeat protection, character gates, animation cancellation, and history restoration. The author has also confirmed history persistence and character filtering in the development client.
+33 automated tests cover selection persistence, draws, repeat protection, character gates, animation cancellation, and history restoration. The author has also confirmed history persistence and character filtering in the development client.
 
 The plugin does not automate gameplay or make network requests. It reads character quest, diary and membership state through RuneLite's client API. Selection IDs and recent draw IDs are stored using RuneLite ConfigManager; history keys include the character's account hash. RuneLite's own configuration storage and sync behavior applies. No login credentials are read or stored by the plugin.
 
@@ -49,3 +49,10 @@ OSRS activity art and the OSRS elements of the logo belong to their respective r
 
 ## 0.1.1 — The Fractured Archive
 Adds the fourth raid with membership and While Guthix Sleeps checks, using the bundled generic raid icon. Existing saved selections stay unchanged: click The Fractured Archive or All in the Raids tab to include it. Fresh selections include all four raids. The introductory miniquest and other encounter-specific conditions are not checked.
+
+## 0.1.2 — Achievement Diaries
+
+The Diaries tab offers 48 region/tier objectives: twelve regions, each with Easy, Medium, Hard and Elite. Reward item icons match each region and difficulty (tiers 1–4). Selection, repeat protection and per-character history work as in the other categories.
+
+With **Available for my character** enabled, non-members and completed diary tiers are excluded. Unread completion data stays blocked until synchronization. Supported base skill levels, quests (started or completed), combat levels and quest points are checked using tier rules adapted from RuneLite Diary Requirements. Missing requirements appear in the row and tooltip. Temporary boosts and individual task completion are not considered: the whole tier is checked even if some tasks are already done. Items, quest-cape eligibility, precise partial-quest steps and other special unlocks are not comprehensively covered; eligibility is not a guarantee that every task is doable. Turning the filter off allows manual selection of any tier. Completing a tier never erases saved selections.
+Version 0.1.2 uses the user-supplied Fractured Archive logo and Achievement Diary section icon. The original images are bundled unchanged and rendered with their aspect ratios preserved. Diary rows use the corresponding reward item icons from the OSRS Wiki, bundled locally without runtime downloads.

@@ -44,6 +44,8 @@ final class QuestAvailability
     private final Map<Quest, QuestState> states;
     private final Boolean wildernessMediumComplete;
     private final Boolean member;
+    private final Map<String, Boolean> completedDiaries;
+    private final Map<String, String> diaryRequirements;
 
     QuestAvailability(boolean ready, long account, Map<Quest, QuestState> states)
     {
@@ -57,6 +59,18 @@ final class QuestAvailability
 
     QuestAvailability(boolean ready, long account, Map<Quest, QuestState> states, Boolean wildernessMediumComplete, Boolean member)
     {
+        this(ready, account, states, wildernessMediumComplete, member, Collections.emptyMap());
+    }
+
+    QuestAvailability(boolean ready, long account, Map<Quest, QuestState> states, Boolean wildernessMediumComplete,
+        Boolean member, Map<String, Boolean> completedDiaries)
+    {
+        this(ready, account, states, wildernessMediumComplete, member, completedDiaries, Collections.emptyMap());
+    }
+
+    QuestAvailability(boolean ready, long account, Map<Quest, QuestState> states, Boolean wildernessMediumComplete,
+        Boolean member, Map<String, Boolean> completedDiaries, Map<String, String> diaryRequirements)
+    {
         this.ready = ready;
         this.account = account;
         Map<Quest, QuestState> copy = new EnumMap<>(Quest.class);
@@ -64,6 +78,8 @@ final class QuestAvailability
         this.states = Collections.unmodifiableMap(copy);
         this.wildernessMediumComplete = wildernessMediumComplete;
         this.member = member;
+        this.completedDiaries = Collections.unmodifiableMap(new LinkedHashMap<>(completedDiaries));
+        this.diaryRequirements = Collections.unmodifiableMap(new LinkedHashMap<>(diaryRequirements));
     }
 
     static QuestAvailability unavailable()
@@ -71,12 +87,18 @@ final class QuestAvailability
         return new QuestAvailability(false, -1, Collections.emptyMap());
     }
 
-    static Set<Quest> quests() { return Collections.unmodifiableSet(EnumSet.copyOf(REQUIREMENTS.values())); }
+    static Set<Quest> quests()
+    {
+        Set<Quest> quests = EnumSet.copyOf(REQUIREMENTS.values());
+        quests.addAll(DiaryRequirements.quests());
+        return Collections.unmodifiableSet(quests);
+    }
     boolean isReady() { return ready; }
     long account() { return account; }
     boolean isChecked(Category category, String id)
     {
-        return REQUIREMENTS.containsKey(category.getKey() + ":" + id) || needsWildernessMedium(category, id);
+        return (category == Category.DIARIES && DiaryCatalog.COMPLETION_VARBITS.containsKey(id))
+            || REQUIREMENTS.containsKey(category.getKey() + ":" + id) || needsWildernessMedium(category, id);
     }
 
     private boolean needsWildernessMedium(Category category, String id)
@@ -88,7 +110,7 @@ final class QuestAvailability
     {
         if (category == Category.SKILLS) return MEMBERS_SKILLS.contains(id);
         if (category == Category.BOSSES) return !FREE_BOSSES.contains(id);
-        return category == Category.RAIDS;
+        return category == Category.RAIDS || category == Category.DIARIES;
     }
 
     static Boolean membershipFrom(int days, boolean membersWorld)
@@ -103,6 +125,13 @@ final class QuestAvailability
         {
             if (!ready || member == null) return "Waiting for membership data";
             if (!member) return "Members only";
+        }
+        if (category == Category.DIARIES)
+        {
+            Boolean complete = completedDiaries.get(id);
+            if (!ready || complete == null) return "Waiting for diary data";
+            if (complete) return "Diary already completed";
+            return diaryRequirements.containsKey(id) ? diaryRequirements.get(id) : "Waiting for skill/quest data";
         }
         if (needsWildernessMedium(category, id))
         {
@@ -121,8 +150,9 @@ final class QuestAvailability
         QuestAvailability that = (QuestAvailability) other;
         return ready == that.ready && account == that.account && states.equals(that.states)
             && Objects.equals(wildernessMediumComplete, that.wildernessMediumComplete)
-            && Objects.equals(member, that.member);
+            && Objects.equals(member, that.member) && completedDiaries.equals(that.completedDiaries)
+            && diaryRequirements.equals(that.diaryRequirements);
     }
 
-    @Override public int hashCode() { return Objects.hash(ready, account, states, wildernessMediumComplete, member); }
+    @Override public int hashCode() { return Objects.hash(ready, account, states, wildernessMediumComplete, member, completedDiaries, diaryRequirements); }
 }

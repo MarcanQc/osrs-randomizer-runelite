@@ -108,3 +108,9 @@ Validation manuelle : faire plusieurs tirages connecté, fermer normalement le c
 
 ## Version 0.1.1
 The Fractured Archive rejoint l’onglet Raids. Le filtre vérifie l’abonnement et While Guthix Sleeps ; une icône générique de raid est utilisée. Les sélections existantes restent intactes : cliquer sur le nouveau raid ou sur All pour l’ajouter aux tirages. La miniquête d’introduction n’est pas vérifiée.
+
+## 0.1.2 — Diaries
+Nouvel onglet compact : 48 choix, soit 12 régions × Easy / Medium / Hard / Elite. Icônes de livre originales colorées par difficulté, sélections sauvegardées et historique par personnage. Le filtre exclut les comptes gratuits et les paliers terminés. Les niveaux, quêtes et objets des tâches individuelles ne sont pas vérifiés. Les données inconnues restent bloquées jusqu'à synchronisation ; désactiver le filtre permet une sélection manuelle libre. 28 tests automatisés réussis ; synchronisation à valider en jeu.
+
+### Filtre niveaux et quêtes — 22 octobre 2026
+Les 48 paliers vérifient désormais les prérequis connus de RuneLite : niveaux de base, quêtes commencées/terminées, points de quête et combat. Premier prérequis manquant dans la ligne ; liste complète en infobulle. Les boosts et tâches individuelles déjà terminées ne sont pas pris en compte. Les objets, étapes précises de quêtes partielles, conditions de cape de quête et certains accès particuliers restent hors couverture. 33 tests réussis ; version dev, à valider en jeu avant publication.
