@@ -10,6 +10,87 @@ import static org.junit.Assert.*;
 
 public class QuestAvailabilityTest
 {
+    private static Map<String, String> unlockedAccess()
+    {
+        Map<String, String> access = new java.util.HashMap<>();
+        BossAccess.IDS.forEach(id -> access.put(id, null));
+        return access;
+    }
+    @Test public void newlyAuditedQuestGatesRequireCompletion()
+    {
+        Map<String, Quest> bosses = new java.util.LinkedHashMap<>();
+        bosses.put("mad_angel", Quest.FALLEN_FROM_GRACE);
+        bosses.put("maggot_king", Quest.THE_BLOOD_MOON_RISES);
+        bosses.put("brutus", Quest.THE_IDES_OF_MILK);
+        bosses.put("shellbane_gryphon", Quest.TROUBLED_TORTUGANS);
+        bosses.put("perilous_moons", Quest.PERILOUS_MOONS);
+        bosses.put("doom_of_mokhaiotl", Quest.THE_FINAL_DAWN);
+        bosses.put("yama", Quest.A_KINGDOM_DIVIDED);
+        bosses.put("nex", Quest.THE_FROZEN_DOOR);
+        bosses.put("the_hueycoatl", Quest.CHILDREN_OF_THE_SUN);
+        bosses.put("sol_heredit", Quest.CHILDREN_OF_THE_SUN);
+        for (String id : new String[] {"barrows", "the_nightmare", "phosanis_nightmare"}) bosses.put(id, Quest.PRIEST_IN_PERIL);
+        for (Map.Entry<String, Quest> gate : bosses.entrySet())
+        {
+            for (QuestState state : QuestState.values())
+            {
+                QuestAvailability snapshot = new QuestAvailability(true, 1, Collections.singletonMap(gate.getValue(), state), true, true,
+                    Collections.emptyMap(), Collections.emptyMap(), Collections.emptyMap(), DiaryRequirementsTest.maxLevels(), unlockedAccess());
+                assertEquals(gate.getKey(), state == QuestState.FINISHED,
+                    snapshot.reason(Category.BOSSES, gate.getKey()) == null);
+            }
+        }
+        assertNotNull(new QuestAvailability(true, 1, Collections.emptyMap(), true, true).reason(Category.RAIDS, "tob"));
+        assertNull(new QuestAvailability(true, 1, Collections.singletonMap(Quest.PRIEST_IN_PERIL, QuestState.FINISHED), true, true)
+            .reason(Category.RAIDS, "tob"));
+        assertNull(new QuestAvailability(true, 1, Collections.singletonMap(Quest.THE_IDES_OF_MILK, QuestState.FINISHED), true, false)
+            .reason(Category.BOSSES, "brutus"));
+    }
+
+    @Test public void skillingBossThresholdsAndDetailSnapshots()
+    {
+        for (String id : new String[] {"tempoross", "wintertodt"})
+        {
+            net.runelite.api.Skill skill = id.equals("tempoross") ? net.runelite.api.Skill.FISHING : net.runelite.api.Skill.FIREMAKING;
+            int required = id.equals("tempoross") ? 35 : 50;
+            Map<net.runelite.api.Skill, Integer> levels = new EnumMap<>(net.runelite.api.Skill.class);
+            levels.put(skill, required - 1);
+            QuestAvailability below = withLevels(levels);
+            assertNotNull(below.reason(Category.BOSSES, id));
+            assertTrue(below.requirementDetails(Category.BOSSES, id).contains((required - 1) + " / " + required));
+            levels.put(skill, required);
+            assertNull(withLevels(levels).reason(Category.BOSSES, id));
+            assertNotNull(below.reason(Category.BOSSES, id)); // immutable snapshot
+            assertEquals("Waiting for skill data", withLevels(Collections.emptyMap()).reason(Category.BOSSES, id));
+        }
+    }
+
+    private QuestAvailability withLevels(Map<net.runelite.api.Skill, Integer> levels)
+    {
+        return new QuestAvailability(true, 1, Collections.emptyMap(), true, true, Collections.emptyMap(),
+            Collections.emptyMap(), Collections.emptyMap(), levels);
+    }
+
+    @Test public void requirementDetailsIncludeAllMissingGatesAndClearAfterUnlock()
+    {
+        Map<Quest, QuestState> states = new EnumMap<>(Quest.class);
+        states.put(Quest.PANDEMONIUM, QuestState.IN_PROGRESS);
+        states.put(Quest.DRAGON_SLAYER_II, QuestState.NOT_STARTED);
+        states.put(Quest.WHILE_GUTHIX_SLEEPS, QuestState.IN_PROGRESS);
+        QuestAvailability snapshot = new QuestAvailability(true, 1, states, false, false);
+        assertTrue(snapshot.requirementDetails(Category.SKILLS, "sailing").contains("Members only"));
+        assertTrue(snapshot.requirementDetails(Category.SKILLS, "sailing").contains("Pandemonium (in progress)"));
+        assertTrue(snapshot.requirementDetails(Category.BOSSES, "vorkath").contains("Dragon Slayer II (not started)"));
+        assertTrue(snapshot.requirementDetails(Category.RAIDS, "tfa").contains("While Guthix Sleeps (in progress)"));
+        assertTrue(snapshot.requirementDetails(Category.BOSSES, "artio").contains("Medium Wilderness Diary (not completed)"));
+        assertTrue(snapshot.requirementDetails(Category.BOSSES, "obor").contains("No quest or diary requirements are tracked"));
+        states.put(Quest.WHILE_GUTHIX_SLEEPS, QuestState.FINISHED);
+        QuestAvailability unlocked = new QuestAvailability(true, 2, states, true, true);
+        assertTrue(unlocked.requirementDetails(Category.RAIDS, "tfa").startsWith("No missing tracked requirements."));
+        assertFalse(unlocked.requirementDetails(Category.RAIDS, "tfa").contains("in progress"));
+        assertTrue(QuestAvailability.unavailable().requirementDetails(Category.RAIDS, "tfa").startsWith("Log in"));
+    }
+
     @Test public void fracturedArchiveRequiresMembershipAndWhileGuthixSleeps()
     {
         for (QuestState state : QuestState.values())
@@ -40,7 +121,7 @@ public class QuestAvailabilityTest
 
     @Test public void freeAccountsKeepFreeSkillsAndBossesButCannotDrawMemberContent()
     {
-        QuestAvailability free = new QuestAvailability(true, 1, Collections.emptyMap(), true, false);
+        QuestAvailability free = new QuestAvailability(true, 1, Collections.singletonMap(Quest.THE_IDES_OF_MILK, QuestState.FINISHED), true, false);
         int freeSkills = 0;
         for (Activity skill : Category.SKILLS.getActivities())
         {
@@ -96,13 +177,14 @@ public class QuestAvailabilityTest
     @Test public void partialQuestAccessAndUnmappedActivitiesAreNotGuessed()
     {
         QuestAvailability snapshot = snapshot(true, 1, Collections.emptyMap());
-        for (String id : new String[] {"zulrah", "perilous_moons", "nex", "doom_of_mokhaiotl"})
+        for (String id : new String[] {"giant_mole"})
         {
             assertFalse(snapshot.isChecked(Category.BOSSES, id));
             assertNull(snapshot.reason(Category.BOSSES, id));
         }
         assertNull(snapshot.reason(Category.SKILLS, "attack"));
-        assertFalse(snapshot.isChecked(Category.RAIDS, "tob"));
+        assertTrue(snapshot.isChecked(Category.RAIDS, "tob"));
+        assertEquals("Waiting for quest data", snapshot.reason(Category.RAIDS, "tob"));
     }
 
     @Test public void snapshotIsImmutableAndAccountSpecific()
@@ -120,7 +202,8 @@ public class QuestAvailabilityTest
     {
         Map<Quest, QuestState> states = new EnumMap<>(Quest.class);
         for (Quest quest : QuestAvailability.quests()) states.put(quest, QuestState.FINISHED);
-        QuestAvailability snapshot = snapshot(true, 1, states, true);
+        QuestAvailability snapshot = new QuestAvailability(true, 1, states, true, true,
+            Collections.emptyMap(), Collections.emptyMap(), Collections.emptyMap(), DiaryRequirementsTest.maxLevels(), unlockedAccess());
         int checked = 0;
         for (Category category : Category.values()) for (Activity activity : category.getActivities())
         {
@@ -128,7 +211,7 @@ public class QuestAvailabilityTest
             if (snapshot.isChecked(category, activity.getId())) checked++;
             assertNull(snapshot.reason(category, activity.getId()));
         }
-        assertEquals(18, checked);
+        assertEquals(39, checked);
     }
 
     @Test public void mediumWildernessDiaryBlocksOnlyTheThreeSinglesBosses()

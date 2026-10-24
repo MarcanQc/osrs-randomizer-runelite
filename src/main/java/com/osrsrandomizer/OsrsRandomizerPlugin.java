@@ -190,8 +190,32 @@ public class OsrsRandomizerPlugin extends Plugin
             questPoints = client.getVarpValue(net.runelite.api.gameval.VarPlayerID.QP);
         }
         catch (RuntimeException ignored) { /* Retry after the next refresh. */ }
+        Map<Integer, Integer> varps = new java.util.HashMap<>();
+        Map<Integer, Integer> varbits = new java.util.HashMap<>();
+        DiaryRequirements.Evaluation diaries = DiaryRequirements.evaluate(levels, states, combat, questPoints,
+            id -> readDiaryVariable(varps, id, false), id -> readDiaryVariable(varbits, id, true));
+        // Zamorak's chamber accepts a Hitpoints boost; diary evaluation above uses base levels.
+        try
+        {
+            net.runelite.api.Skill hp = net.runelite.api.Skill.HITPOINTS;
+            Integer base = levels.get(hp);
+            if (base != null) levels.put(hp, Math.max(base, client.getBoostedSkillLevel(hp)));
+        }
+        catch (RuntimeException ignored) { /* Retain the known base level. */ }
         publish(new QuestAvailability(true, client.getAccountHash(), states, wildernessMediumComplete, member, completedDiaries,
-            DiaryRequirements.evaluate(levels, states, combat, questPoints)));
+            diaries.reasons, diaries.details, levels, BossAccess.read(client)));
+    }
+
+    private Integer readDiaryVariable(Map<Integer, Integer> cache, int id, boolean varbit)
+    {
+        if (!cache.containsKey(id))
+        {
+            Integer value = null;
+            try { value = varbit ? client.getVarbitValue(id) : client.getVarpValue(id); }
+            catch (RuntimeException ignored) { /* Failed reads never waive task requirements. */ }
+            cache.put(id, value);
+        }
+        return cache.get(id);
     }
 
     private void publish(QuestAvailability snapshot)

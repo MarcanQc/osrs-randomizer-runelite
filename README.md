@@ -35,7 +35,7 @@ Install OSRS Randomizer from RuneLite's Plugin Hub. New updates require Plugin H
 
 ## Validation and data
 
-33 automated tests cover selection persistence, draws, repeat protection, character gates, animation cancellation, and history restoration. The author has also confirmed history persistence and character filtering in the development client.
+51 automated tests cover selection persistence, draws, repeat protection, character gates, animation cancellation, and history restoration. The author has also confirmed history persistence and character filtering in the development client.
 
 The plugin does not automate gameplay or make network requests. It reads character quest, diary and membership state through RuneLite's client API. Selection IDs and recent draw IDs are stored using RuneLite ConfigManager; history keys include the character's account hash. RuneLite's own configuration storage and sync behavior applies. No login credentials are read or stored by the plugin.
 
@@ -54,5 +54,11 @@ Adds the fourth raid with membership and While Guthix Sleeps checks, using the b
 
 The Diaries tab offers 48 region/tier objectives: twelve regions, each with Easy, Medium, Hard and Elite. Reward item icons match each region and difficulty (tiers 1–4). Selection, repeat protection and per-character history work as in the other categories.
 
-With **Available for my character** enabled, non-members and completed diary tiers are excluded. Unread completion data stays blocked until synchronization. Supported base skill levels, quests (started or completed), combat levels and quest points are checked using tier rules adapted from RuneLite Diary Requirements. Missing requirements appear in the row and tooltip. Temporary boosts and individual task completion are not considered: the whole tier is checked even if some tasks are already done. Items, quest-cape eligibility, precise partial-quest steps and other special unlocks are not comprehensively covered; eligibility is not a guarantee that every task is doable. Turning the filter off allows manual selection of any tier. Completing a tier never erases saved selections.
+With **Available for my character** enabled, non-members and completed diary tiers are excluded. Unread completion data stays blocked until synchronization. Supported base skill levels, quests (started or completed), combat levels and quest points are checked using tier rules adapted from RuneLite Diary Requirements. Missing requirements appear in the row and tooltip. Click the small **i** beside a diary to expand its missing requirements, current/required base levels and quest states. Tasks already completed by the character are skipped when evaluating their requirements. Temporary boosts are not considered. Items, precise partial-quest steps and other special unlocks are not comprehensively covered; eligibility is not a guarantee that every task is doable. Turning the filter off allows manual selection of any tier. Completing a tier never erases saved selections.
 Version 0.1.2 uses the user-supplied Fractured Archive logo and Achievement Diary section icon. The logos are bundled at icon-sized resolutions (96 x 74 and 40 x 39 pixels), preserving transparency and aspect ratios. Diary rows use the corresponding reward item icons from the OSRS Wiki, bundled locally without runtime downloads.
+
+The **i** button is also available in Skills, Bosses and Raids. It shows missing tracked membership, quest and diary gates, including quest progress, even when filtering is disabled. Activities without mapped quest/diary gates indicate that no such requirements are tracked.
+
+Requirement coverage was expanded after the [23 October audit](docs/requirements-audit-2026-10-23.md): fourteen additional quest gates, Fishing 35 for Tempoross and Firemaking 50 for Wintertodt. Special access conditions remain partially covered; see the audit for known gaps.
+
+The tested 0.1.2 update also checks Shellbane Gryphon's Slayer level and assignment or specific carried elite clue, Zulrah priestess acceptance, God Wars entrance and chamber skill levels, and the Lumbridge/Falador Elite cape tasks. Quest-cape checks use the current game maximum quest points and skip completed emote tasks. God Wars route alternatives, equipment, keys and kill count remain untracked.

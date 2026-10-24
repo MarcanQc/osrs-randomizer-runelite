@@ -50,6 +50,7 @@ final class RandomizerPanel extends PluginPanel
     private final JLabel syncStatus = new JLabel();
     private QuestAvailability availability = QuestAvailability.unavailable();
     private Long lastAccount;
+    private String expandedRequirement;
     private final JComboBox<String> filter = new JComboBox<>(new String[] {"Show all", "Selected only", "Excluded only"});
 
     RandomizerPanel(DrawEngine engine, SelectionStore store)
@@ -249,7 +250,40 @@ final class RandomizerPanel extends PluginPanel
                 }
             });
             if (visible > 0) activities.add(javax.swing.Box.createVerticalStrut(3));
-            activities.add(card);
+            {
+                JPanel row = new JPanel(new BorderLayout(3, 0));
+                row.setOpaque(false);
+                row.setAlignmentX(0f);
+                row.setMaximumSize(new Dimension(Integer.MAX_VALUE, rowHeight));
+                row.add(card, BorderLayout.CENTER);
+                JButton info = new JButton("i");
+                info.setMargin(new java.awt.Insets(0, 0, 0, 0));
+                info.setPreferredSize(new Dimension(23, rowHeight));
+                info.setToolTipText("Show missing requirements");
+                info.getAccessibleContext().setAccessibleName("Requirements: " + activity.getName());
+                info.putClientProperty("requirementInfo", activity.getId());
+                if (category == Category.DIARIES) info.putClientProperty("diaryInfo", activity.getId());
+                String detailKey = category.getKey() + ":" + activity.getId();
+                info.addActionListener(e -> {
+                    expandedRequirement = detailKey.equals(expandedRequirement) ? null : detailKey;
+                    rebuild();
+                });
+                row.add(info, BorderLayout.EAST);
+                activities.add(row);
+                if (detailKey.equals(expandedRequirement))
+                {
+                    String text = availability.requirementDetails(category, activity.getId());
+                    JLabel detail = new JLabel("<html><div style='width:145px'><b>Missing requirements</b><br>"
+                        + escapeHtml(text).replace("\n", "<br>") + "</div></html>");
+                    detail.putClientProperty("requirementDetails", activity.getId());
+                    if (category == Category.DIARIES) detail.putClientProperty("diaryDetails", activity.getId());
+                    detail.setForeground(new Color(216, 202, 174));
+                    detail.setBorder(BorderFactory.createEmptyBorder(8, 6, 10, 6));
+                    detail.setAlignmentX(0f);
+                    detail.setMaximumSize(new Dimension(Integer.MAX_VALUE, detail.getPreferredSize().height));
+                    activities.add(detail);
+                }
+            }
             visible++;
         }
 
@@ -257,6 +291,11 @@ final class RandomizerPanel extends PluginPanel
         refresh();
         revalidate();
         repaint();
+    }
+
+    private static String escapeHtml(String text)
+    {
+        return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
 
     private void refresh()

@@ -8,6 +8,69 @@ import static org.junit.Assert.*;
 
 public class DiaryRequirementsTest
 {
+    @Test public void completedTaskWaivesOnlyItsOwnRequirements()
+    {
+        Map<Skill, Integer> levels = maxLevels();
+        levels.put(Skill.THIEVING, 1);
+        Map<Quest, QuestState> quests = finishedQuests();
+        quests.put(Quest.BIOHAZARD, QuestState.NOT_STARTED);
+        // Ardougne: cake task is bit 1, combat training camp is bit 6.
+        DiaryRequirements.Evaluation cakeDone = DiaryRequirements.evaluate(levels, quests, 126, 999,
+            id -> id == 1196 ? 1 << 1 : 0, id -> 0);
+        assertEquals("Complete Biohazard", cakeDone.reasons.get("ardougne_easy"));
+        assertFalse(cakeDone.details.get("ardougne_easy").contains("Thieving"));
+        assertNull(DiaryRequirements.evaluate(levels, quests, 126, 999,
+            id -> id == 1196 ? (1 << 1) | (1 << 6) : 0, id -> 0).reasons.get("ardougne_easy"));
+        assertTrue(DiaryRequirements.evaluate(levels, quests, 126, 999,
+            id -> null, id -> null).reasons.get("ardougne_easy").contains("5 Thieving"));
+    }
+
+    @Test public void partialKaramjaTaskDoesNotWaiveRequirements()
+    {
+        Map<Skill, Integer> levels = maxLevels();
+        levels.put(Skill.WOODCUTTING, 1);
+        // Collect FIVE palm leaves: 4 is incomplete, 5 complete.
+        assertNotNull(DiaryRequirements.evaluate(levels, finishedQuests(), 126, 999,
+            id -> 0, id -> id == 3607 ? 4 : 1).reasons.get("karamja_hard"));
+        assertNull(DiaryRequirements.evaluate(levels, finishedQuests(), 126, 999,
+            id -> 0, id -> id == 3607 ? 5 : 1).reasons.get("karamja_hard"));
+    }
+
+    @Test public void signBitCompletionAndUnknownReadsAreHandled()
+    {
+        DiaryTask task = DiaryRequirementsData.tasks().get("ardougne_hard").stream()
+            .filter(t -> t.name.contains("Red Salamander")).findFirst().get();
+        assertTrue(task.completed(id -> Integer.MIN_VALUE, id -> 0));
+        assertFalse(task.completed(id -> Integer.MAX_VALUE, id -> 0));
+        assertFalse(task.completed(id -> null, id -> null));
+    }
+
+    @Test public void completedTasksAcrossAllTiersIgnoreEvenUnknownRequirements()
+    {
+        DiaryRequirements.Evaluation allDone = DiaryRequirements.evaluate(Collections.emptyMap(), Collections.emptyMap(), null, null,
+            id -> -1, id -> 100);
+        assertEquals(48, allDone.reasons.size());
+        allDone.reasons.values().forEach(reason -> assertNull(reason));
+        allDone.details.values().forEach(detail -> assertEquals("No missing tracked requirements for unfinished tasks.", detail));
+    }
+
+    @Test public void detailsShowCurrentLevelsAndQuestStateAndRefreshOnLevelChange()
+    {
+        Map<Skill, Integer> levels = maxLevels();
+        levels.put(Skill.THIEVING, 3);
+        Map<Quest, QuestState> quests = finishedQuests();
+        quests.put(Quest.BIOHAZARD, QuestState.IN_PROGRESS);
+        DiaryRequirements.Evaluation first = DiaryRequirements.evaluate(levels, quests, 126, 999, id -> 0, id -> 0);
+        String detail = first.details.get("ardougne_easy");
+        assertTrue(detail.contains("Thieving: 3 / 5"));
+        assertTrue(detail.contains("Complete Biohazard (in progress)"));
+        levels.put(Skill.THIEVING, 4);
+        DiaryRequirements.Evaluation second = DiaryRequirements.evaluate(levels, quests, 126, 999, id -> 0, id -> 0);
+        assertEquals(first.reasons, second.reasons);
+        assertNotEquals(new QuestAvailability(true, 1, quests, false, true, Collections.emptyMap(), first.reasons, first.details),
+            new QuestAvailability(true, 1, quests, false, true, Collections.emptyMap(), second.reasons, second.details));
+    }
+
     static Map<Skill, Integer> maxLevels()
     {
         Map<Skill, Integer> levels = new EnumMap<>(Skill.class);
@@ -24,7 +87,7 @@ public class DiaryRequirementsTest
 
     static Map<String, String> eligible()
     {
-        return DiaryRequirements.evaluate(maxLevels(), finishedQuests(), 126, 999);
+        return DiaryRequirements.evaluate(maxLevels(), finishedQuests(), 126, 999, id -> 0, id -> id == 1782 ? 999 : 0).reasons;
     }
 
     @Test public void all48TiersHaveRulesAndUnknownDataNeverUnlocks()

@@ -4,7 +4,7 @@ Open the OSRS Randomizer settings using its gear in the RuneLite plugin list. **
 
 The filter preserves manual selections. Locked activities are grey, excluded from draws, and show the missing requirement in a tooltip. Finishing the requirement restores the activity if it was selected. **All** and **None** still change manual choices for the whole category. Turning the filter off restores manual selection behavior. The setting is stored under the existing questFilter key. It defaults to on, preserves existing saved preferences, and updates the panel immediately. The main panel has no toggle.
 
-This is **partial requirement coverage**, not a guarantee that an activity can be completed. Outside Diaries, skill levels are not checked. Equipment, keys, combat ability and additional non-quest access unlocks are not comprehensively checked. Unmapped activities remain selectable and have a “requirements not checked” tooltip. Sailing and Herblore have quest gates; nine skills also require membership.
+This is **partial requirement coverage**, not a guarantee that an activity can be completed. Outside Diaries, Fishing 35 for Tempoross and Firemaking 50 for Wintertodt are checked; other skill gates are not comprehensively checked. Equipment, keys, combat ability and additional non-quest access unlocks are not comprehensively checked. Unmapped activities remain selectable and have a “requirements not checked” tooltip. Sailing and Herblore have quest gates; nine skills also require membership.
 
 ## Supported activities
 
@@ -26,7 +26,7 @@ The following quests must be finished. Boss entries refer to repeatable post-que
 | Tombs of Amascut | Beneath Cursed Sands |
 | The Fractured Archive | While Guthix Sleeps |
 
-Corrupted Gauntlet can have additional access requirements; only its quest gate is checked here. Zulrah, Perilous Moons, Nex, Doom of Mokhaiotl, Theatre of Blood and other entries outside the tables are deliberately unmapped pending verification of their exact access rules. Do not interpret a selectable entry as a verified accessible activity.
+Corrupted Gauntlet can have additional access requirements; only its quest gate is checked here. The table above records the initial coverage. The 23 October audit adds fourteen quest gates, including Perilous Moons, Nex, Doom of Mokhaiotl and Theatre of Blood; see the audit below for the full list. Zulrah remains unmapped because its exact intermediate quest stage and dialogue are not yet read. Do not interpret a selectable entry as a verified accessible activity.
 
 ## Session behavior
 
@@ -89,7 +89,7 @@ Manual checks: compare a free account and a member account on a free world; chec
 ## Diary objectives (0.1.2)
 The Diaries category contains 12 regions and four tiers per region. All require membership. Completed tiers are excluded using the corresponding RuneLite gameval VarbitID *_DIARY_*_COMPLETE flags; Karamja Easy/Medium/Hard use ATJUN_EASY_DONE, ATJUN_MED_DONE and ATJUN_HARD_DONE. Unknown data remains blocked. Completion flags are copied into immutable snapshots on the client thread and refreshed with other character data. Account changes invalidate old snapshots.
 
-This checks completion plus supported skill and quest requirements for the full tier. Items and completion of individual tasks are not checked. Lower tiers do not block working on higher tiers. Saved choices are never changed by automatic filtering. Disable the character filter for unrestricted manual draws.
+This checks tier completion plus supported skill and quest requirements for unfinished tasks. Items are not checked. Lower tiers do not block working on higher tiers. Saved choices are never changed by automatic filtering. Disable the character filter for unrestricted manual draws.
 
 Sources: https://oldschool.runescape.wiki/w/Achievement_Diary and https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/gameval/VarbitID.java
 
@@ -103,9 +103,25 @@ DiaryRequirementsData retains the original license notices. Source grouping foll
 
 Policy and limitations:
 - Uses base levels, not temporary boosts. A player who can boost for a task may be excluded.
-- Checks the entire tier, without skipping already completed individual tasks.
+- Completed individual tasks are skipped using their task-completion flags (updated 23 October 2026).
 - Started-quest rules require IN_PROGRESS or FINISHED; exact intermediate quest stages are not checked.
 - Rules inherit RuneLite's coverage: items, special unlocks, quest-cape eligibility and Ironman-specific requirements are not comprehensive.
 - No claim that meeting these rules guarantees the tier can be completed. Disable the filter for manual choices where appropriate.
 
 Validation: 33 automated tests pass, including thresholds, started versus finished quests, alternative requirements, unknown data, immutable results, filter disable/enable and account changes. The compact reason preview is inspected. In-game testing remains required before publication.
+
+### Task-aware filtering and details — 23 October 2026 (development)
+
+Each requirement group is associated with its actual task completion flag. Associations for all 48 tiers are recorded in [diary-task-sources.json](docs/diary-task-sources.json), based on Quest Helper sources. Karamja Easy/Medium/Hard use varbits (including the five-palm-leaves counter); other tasks use the final completion bits in packed varps, not intermediate progress. Both variants of the Ardougne totem task share the same bit. Original notices are retained in the source and bundled DIARY-TASKS-LICENSE.txt.
+
+Client-thread reads are cached within each refresh and never persisted across characters. Failed reads never waive a requirement. The expanded **i** panel is independent of selection and remains usable on blocked rows and with filtering disabled. Details refresh with character state, including level gains below the required threshold, and clear on logout. The existing base-level and partial-coverage limitations still apply.
+
+Validation includes task-specific skipping, Karamja partial progress, bit 31, unavailable data, all-tier completion, current/required levels, quest states, unchanged selection on opening details and removal of character details after logout. Live in-game verification is required before publishing this development change.
+
+## Audit — 23 October 2026
+
+See [the detailed audit](docs/requirements-audit-2026-10-23.md) for fourteen added quest gates, two skilling-boss thresholds, sources, and confirmed remaining gaps. This is still partial coverage, especially for God Wars access, task assignments, item keys and diary special unlocks.
+
+## Tested update — 24 October 2026
+
+The latest development version was tested and approved by the author for submission. 51 automated tests pass. The audit document contains the current special-access additions and remaining limitations; earlier dated sections describe previous coverage. Details use the existing i button in every category.

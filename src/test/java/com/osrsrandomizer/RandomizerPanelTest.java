@@ -9,6 +9,79 @@ import static org.junit.Assert.*;
 
 public class RandomizerPanelTest
 {
+    @Test public void requirementButtonsWorkInEveryCategoryWithoutSavingSelection() throws Exception
+    {
+        SwingUtilities.invokeAndWait(() -> {
+            RandomizerPanel panel = new RandomizerPanel(new DrawEngine(new Random(1)), new SelectionStore()
+            {
+                public Set<String> load(Category c) { return SelectionCodec.decode(c, null); }
+                public void save(Category c, Set<String> ids) { fail("Details must not change selections"); }
+            });
+            try
+            {
+                for (Category category : Category.values())
+                {
+                    button(panel, category.toString()).doClick();
+                    List<Component> buttons = new ArrayList<>();
+                    for (Component c : descendants(panel)) if (c instanceof JButton
+                        && ((JButton)c).getClientProperty("requirementInfo") != null) buttons.add(c);
+                    assertEquals(category.getActivities().size(), buttons.size());
+                    ((JButton)buttons.get(0)).doClick();
+                    assertTrue(descendants(panel).stream().anyMatch(c -> c instanceof JLabel
+                        && ((JLabel)c).getClientProperty("requirementDetails") != null
+                        && ((JLabel)c).getText().contains("Log in")));
+                    panel.setQuestFilterEnabled(false);
+                }
+            }
+            finally { panel.dispose(); }
+        });
+    }
+
+    @Test public void diaryDetailsOpenWithoutChangingSelectionAndClearOnLogout() throws Exception
+    {
+        SwingUtilities.invokeAndWait(() -> {
+            RandomizerPanel panel = new RandomizerPanel(new DrawEngine(new Random(1)), new SelectionStore()
+            {
+                public Set<String> load(Category c) { return Collections.singleton("ardougne_easy"); }
+                public void save(Category c, Set<String> ids) { fail("Opening details must not change selections"); }
+            });
+            try
+            {
+                Map<net.runelite.api.Skill, Integer> levels = DiaryRequirementsTest.maxLevels();
+                levels.put(net.runelite.api.Skill.THIEVING, 3);
+                DiaryRequirements.Evaluation evaluated = DiaryRequirements.evaluate(levels, DiaryRequirementsTest.finishedQuests(), 126, 999, id -> 0, id -> 0);
+                panel.updateAvailability(new QuestAvailability(true, 1, Collections.emptyMap(), false, true,
+                    Collections.singletonMap("ardougne_easy", false), evaluated.reasons, evaluated.details));
+                button(panel, "Diaries").doClick();
+                diaryInfo(panel, "ardougne_easy").doClick();
+                assertTrue(diaryDetail(panel).getText().contains("Thieving: 3 / 5"));
+                assertFalse(cards(panel).get(0).isEnabled());
+                panel.setQuestFilterEnabled(false);
+                assertTrue(diaryDetail(panel).getText().contains("Thieving: 3 / 5"));
+                assertTrue(cards(panel).get(0).isSelected());
+                panel.updateAvailability(QuestAvailability.unavailable());
+                assertTrue(diaryDetail(panel).getText().contains("Log in"));
+                assertFalse(diaryDetail(panel).getText().contains("Thieving: 3 / 5"));
+                diaryInfo(panel, "ardougne_easy").doClick();
+                assertFalse(descendants(panel).stream().anyMatch(c -> c instanceof JLabel
+                    && ((JLabel) c).getClientProperty("diaryDetails") != null));
+            }
+            finally { panel.dispose(); }
+        });
+    }
+
+    private JButton diaryInfo(Container root, String id)
+    {
+        return (JButton) descendants(root).stream().filter(c -> c instanceof JButton
+            && id.equals(((JButton) c).getClientProperty("diaryInfo"))).findFirst().get();
+    }
+
+    private JLabel diaryDetail(Container root)
+    {
+        return (JLabel) descendants(root).stream().filter(c -> c instanceof JLabel
+            && ((JLabel) c).getClientProperty("diaryDetails") != null).findFirst().get();
+    }
+
     @Test public void diaryCompletionAndAccountSwitchPreserveSelectionAndHistory() throws Exception
     {
         SwingUtilities.invokeAndWait(() ->

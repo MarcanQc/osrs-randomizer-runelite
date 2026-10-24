@@ -1,0 +1,4153 @@
+{
+  "reviewed": "2026-10-23",
+  "tasks": [
+    {
+      "id": "ardougne_easy",
+      "task": "Have Wizard Cromperty teleport you to the Rune Essence mine.",
+      "condition": {
+        "name": "notEssMine",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneEasy.java"
+    },
+    {
+      "id": "ardougne_easy",
+      "task": "Steal a cake from the Ardougne market stalls.",
+      "condition": {
+        "name": "notStealCake",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneEasy.java"
+    },
+    {
+      "id": "ardougne_easy",
+      "task": "Enter the Combat Training Camp north of W. Ardougne.",
+      "condition": {
+        "name": "notEnterCombatCamp",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneEasy.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Enter the Unicorn pen in Ardougne zoo using Fairy rings.",
+      "condition": {
+        "name": "notUniPen",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Grapple over Yanille's south wall.",
+      "condition": {
+        "name": "notGrapYan",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Harvest some strawberries from the Ardougne farming patch.",
+      "condition": {
+        "name": "notArdyStraw",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Cast the Ardougne Teleport spell.",
+      "condition": {
+        "name": "notTPArdy",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Travel to Castlewars by Hot Air Balloon.",
+      "condition": {
+        "name": "notBalloonCW",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Claim buckets of sand from Bert in Yanille.",
+      "condition": {
+        "name": "notClaimSand",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Catch any fish on the Fishing Platform.",
+      "condition": {
+        "name": "notFishOnPlatform",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Pickpocket the master farmer north of Ardougne.",
+      "condition": {
+        "name": "notPickMasterFarmer",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Collect some Nightshade from the Skavid Caves.",
+      "condition": {
+        "name": "notCaveNightshade",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Kill a swordchick in the Tower of Life.",
+      "condition": {
+        "name": "notKillSwordchick",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Equip Iban's upgraded staff or upgrade an Iban staff.",
+      "condition": {
+        "name": "notIbanUpgrade",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_medium",
+      "task": "Visit the Island East of the Necromancer's tower.",
+      "condition": {
+        "name": "notNecroTower",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneMedium.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Recharge some Jewellery at the Totem in the Legends Guild.",
+      "condition": {
+        "name": "notRecharge",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Recharge some Jewellery at Totem in the Legends Guild.",
+      "condition": {
+        "name": "notRecharge",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Enter the Magic Guild.",
+      "condition": {
+        "name": "notMagicGuild",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Steal from a chest in Ardougne Castle.",
+      "condition": {
+        "name": "notStealChest",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Have a zookeeper put you in Ardougne Zoo's monkey cage.",
+      "condition": {
+        "name": "notMonkeyCage",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Teleport to the Watchtower.",
+      "condition": {
+        "name": "notTPWatchtower",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Catch a Red Salamander.",
+      "condition": {
+        "name": "notRedSally",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Check the health of a Palm tree near tree gnome village.",
+      "condition": {
+        "name": "notPalmTree",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Pick some Poison Ivy berries from the patch south of Ardougne.",
+      "condition": {
+        "name": "notPoisonIvy",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Smith a Mithril platebody near Ardougne.",
+      "condition": {
+        "name": "notMithPlate",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Enter your POH from Yanille.",
+      "condition": {
+        "name": "notYanPOH",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Smith a Dragon sq shield in West Ardougne.",
+      "condition": {
+        "name": "notDragSquare",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_hard",
+      "task": "Craft some Death runes from Essence.",
+      "condition": {
+        "name": "notDeathRune",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneHard.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Catch a Manta ray in the Fishing Trawler and cook it in Port Khazard.",
+      "condition": {
+        "name": "notTrawlerRay",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Picklock the door to the basement of Yanille Agility Dungeon.",
+      "condition": {
+        "name": "notYanAgi",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Pickpocket a Hero.",
+      "condition": {
+        "name": "notPickHero",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Make a rune crossbow yourself from scratch within Witchaven or Yanille.",
+      "condition": {
+        "name": "notRuneCrossbow",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Imbue a Salve amulet at Nightmare Zone, or equip a Salve amulet that was imbued there.",
+      "condition": {
+        "name": "notImbueSalve",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Pick some Torstol from the patch north of Ardougne.",
+      "condition": {
+        "name": "notPickTorstol",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Complete a lap of Ardougne's rooftop agility course.",
+      "condition": {
+        "name": "notArdyRooftops",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "ardougne_elite",
+      "task": "Cast Ice Barrage on another player within Castle Wars.",
+      "condition": {
+        "name": "notIceBarrage",
+        "kind": "Varplayer",
+        "constant": "ARDOUNGE_ACHIEVEMENT_DIARY2",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/ardougne/ArdougneElite.java"
+    },
+    {
+      "id": "desert_easy",
+      "task": "Catch a Golden Warbler.",
+      "condition": {
+        "name": "notGoldWarbler",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertEasy.java"
+    },
+    {
+      "id": "desert_easy",
+      "task": "Mine 5 clay in the north-eastern desert.",
+      "condition": {
+        "name": "notFiveClay",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertEasy.java"
+    },
+    {
+      "id": "desert_easy",
+      "task": "Open the Sarcophagus in the first room of Pyramid Plunder.",
+      "condition": {
+        "name": "notOpenSarc",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertEasy.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Climb to the summit of the Agility Pyramid.",
+      "condition": {
+        "name": "notAgiPyramid",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Slay a desert lizard.",
+      "condition": {
+        "name": "notDesertLizard",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Catch an Orange Salamander.",
+      "condition": {
+        "name": "notOrangeSally",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Steal a feather from the Desert Phoenix.",
+      "condition": {
+        "name": "notPhoenixFeather",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Travel to Uzer via Magic Carpet.",
+      "condition": {
+        "name": "notMagicCarpet",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Travel to the Desert via Eagle.",
+      "condition": {
+        "name": "notEagleTravel",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Pray at the Elidinis statuette in Nardah.",
+      "condition": {
+        "name": "notPrayElidinis",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Create a combat potion in the desert.",
+      "condition": {
+        "name": "notCombatPot",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Teleport to Enakhra's Temple with the Camulet.",
+      "condition": {
+        "name": "notTPEnakhra",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Visit the Genie.",
+      "condition": {
+        "name": "notVisitGenie",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Teleport to Pollnivneach with a redirected teleport to house tablet.",
+      "condition": {
+        "name": "notTPPollnivneach",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_medium",
+      "task": "Chop some Teak logs near Uzer.",
+      "condition": {
+        "name": "notChopTeak",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertMedium.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Knock out and pickpocket a Menaphite Thug.",
+      "condition": {
+        "name": "notMenaThug",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Mine some Granite.",
+      "condition": {
+        "name": "notGranite",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Refill your waterskins in the Desert using Lunar magic.",
+      "condition": {
+        "name": "notRefillWaterskin",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Complete a lap of the Pollnivneach agility course.",
+      "condition": {
+        "name": "notPollRooftop",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Slay a Dust Devil in the desert cave with a Slayer helmet equipped.",
+      "condition": {
+        "name": "notKillDust",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Activate Ancient Magicks at the altar in the Jaldraocht Pyramid.",
+      "condition": {
+        "name": "notAncientMagicks",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Defeat a Locust Rider with Keris.",
+      "condition": {
+        "name": "notKillLocustRider",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Burn some yew logs on the Nardah Mayor's balcony.",
+      "condition": {
+        "name": "notBurnYew",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_hard",
+      "task": "Create a Mithril Platebody in Nardah.",
+      "condition": {
+        "name": "notMithPlatebody",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertHard.java"
+    },
+    {
+      "id": "desert_elite",
+      "task": "Bake a wild pie at the Nardah Clay Oven.",
+      "condition": {
+        "name": "notWildPie",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertElite.java"
+    },
+    {
+      "id": "desert_elite",
+      "task": "Cast Ice Barrage against a foe in the Desert.",
+      "condition": {
+        "name": "notIceBarrage",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertElite.java"
+    },
+    {
+      "id": "desert_elite",
+      "task": "Fletch some Dragon darts at the Bedabin Camp.",
+      "condition": {
+        "name": "notDragonDarts",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertElite.java"
+    },
+    {
+      "id": "desert_elite",
+      "task": "Speak to the KQ head in your POH.",
+      "condition": {
+        "name": "notTalkKQHead",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertElite.java"
+    },
+    {
+      "id": "desert_elite",
+      "task": "Steal from the Grand Gold Chest in the final room of Pyramid Plunder.",
+      "condition": {
+        "name": "notGrandGoldChest",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertElite.java"
+    },
+    {
+      "id": "desert_elite",
+      "task": "Restore at least 85 Prayer points when praying at the Altar in Sophanem.",
+      "condition": {
+        "name": "notRestorePrayer",
+        "kind": "Varplayer",
+        "constant": "DESERT_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/desert/DesertElite.java"
+    },
+    {
+      "id": "falador_easy",
+      "task": "Find out what your family crest is from Sir Renitee.",
+      "condition": {
+        "name": "notFamilyCrest",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorEasy.java"
+    },
+    {
+      "id": "falador_easy",
+      "task": "Climb over the western Falador wall.",
+      "condition": {
+        "name": "notClimbedWall",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorEasy.java"
+    },
+    {
+      "id": "falador_easy",
+      "task": "Smith some Blurite Limbs on Doric's Anvil.",
+      "condition": {
+        "name": "notBluriteLimbs",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorEasy.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Light a Bullseye lantern at the Chemist's in Rimmington.",
+      "condition": {
+        "name": "notLitLantern",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Telegrab some Wine of Zamorak at the Chaos Temple by the Wilderness.",
+      "condition": {
+        "name": "notTelegrabbedWine",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Place a Scarecrow in the Falador farming patch.",
+      "condition": {
+        "name": "notPlacedScarecrow",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Kill a Mogre at Mudskipper Point.",
+      "condition": {
+        "name": "notKilledMogre",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Visit the Port Sarim Rat Pits.",
+      "condition": {
+        "name": "notVisitRatPits",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Grapple up and then jump off the north Falador wall.",
+      "condition": {
+        "name": "notGrappleNorthWall",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Pickpocket a Falador guard.",
+      "condition": {
+        "name": "notPickpocketGuard",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate.",
+      "condition": {
+        "name": "notPrayAtAltar",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Mine some Gold ore at the Crafting Guild.",
+      "condition": {
+        "name": "notMineGold",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Squeeze through the crevice in the Dwarven mines.",
+      "condition": {
+        "name": "notDwarfShortcut",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Chop and burn some Willow logs in Taverley",
+      "condition": {
+        "name": "notChopBurnWillowTav",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Craft a fruit basket on the Falador Farm loom.",
+      "condition": {
+        "name": "notBasketFalLoom",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_medium",
+      "task": "Teleport to Falador.",
+      "condition": {
+        "name": "notTeleportFalador",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorMedium.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Craft 140 Mind runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "notCraftedMindRunes",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Change your family crest to the Saradomin symbol.",
+      "condition": {
+        "name": "notChangedFamilyCrest",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Kill a Skeletal Wyvern in the Asgarnia Ice Dungeon.",
+      "condition": {
+        "name": "notKilledWyvern",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Complete a lap of the Falador rooftop agility course.",
+      "condition": {
+        "name": "notCompleteAgiCourse",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Enter the mining guild wearing a Prospector helmet.",
+      "condition": {
+        "name": "notEnterMiningGuildWithProspector",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Kill the Blue Dragon under the Heroes' Guild.",
+      "condition": {
+        "name": "notKilledBlueDragon",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Crack a wall safe within Rogues Den.",
+      "condition": {
+        "name": "notCrackedWallSafe",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Recharge your prayer in the Port Sarim church while wearing full Proselyte.",
+      "condition": {
+        "name": "notPraySarimAltarProsy",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_hard",
+      "task": "Equip a dwarven helmet within the dwarven mines.",
+      "condition": {
+        "name": "notDwarvenHelmetDwarvenMines",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorHard.java"
+    },
+    {
+      "id": "falador_elite",
+      "task": "Craft 252 Air Runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "notCraftedAirRunes",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorElite.java"
+    },
+    {
+      "id": "falador_elite",
+      "task": "Purchase a White 2h Sword from Sir Vyvin.",
+      "condition": {
+        "name": "notPurchasedWhite2hSword",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorElite.java"
+    },
+    {
+      "id": "falador_elite",
+      "task": "Find at least 3 magic roots at once when digging up your magic tree in Falador.",
+      "condition": {
+        "name": "notGotMagicRoots",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorElite.java"
+    },
+    {
+      "id": "falador_elite",
+      "task": "Jump over the strange floor in Taverley dungeon.",
+      "condition": {
+        "name": "notJumpedOverStrangeFloor",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorElite.java"
+    },
+    {
+      "id": "falador_elite",
+      "task": "Mix a Saradomin brew in Falador east bank.",
+      "condition": {
+        "name": "notMadeSaraBrew",
+        "kind": "Varplayer",
+        "constant": "FALADOR_ACHIEVEMENT_DIARY2",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/falador/FaladorElite.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Catch a Cerulean twitch.",
+      "condition": {
+        "name": "notCatchCerulean",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Change your boots at Yrsa's Shoe Store.",
+      "condition": {
+        "name": "notChangeBoots",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Craft a tiara from scratch in Rellekka.",
+      "condition": {
+        "name": "notCraftTiara",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Browse the Stonemasons shop.",
+      "condition": {
+        "name": "notBrowseStonemason",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Steal from the Keldagrim crafting or baker's stall.",
+      "condition": {
+        "name": "notStealStall",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Enter the Troll Stronghold.",
+      "condition": {
+        "name": "notEnterTrollStronghold",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_easy",
+      "task": "Chop and burn some oak logs in the Fremennik Province.",
+      "condition": {
+        "name": "notChopAndBurnOak",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikEasy.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Slay a Brine rat.",
+      "condition": {
+        "name": "notSlayBrineRat",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Travel to the Snowy Hunter Area via Eagle.",
+      "condition": {
+        "name": "notSnowyHunter",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Mine some coal in Rellekka.",
+      "condition": {
+        "name": "notMineCoal",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Steal from the Rellekka Fish stalls.",
+      "condition": {
+        "name": "notStealFish",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Travel to Miscellania by Fairy ring.",
+      "condition": {
+        "name": "notTravelMisc",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Catch a Snowy knight.",
+      "condition": {
+        "name": "notSnowyKnight",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Pick up your Pet Rock from your POH Menagerie.",
+      "condition": {
+        "name": "notPetRockPOH",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Visit the Lighthouse from Waterbirth island.",
+      "condition": {
+        "name": "notLighthouse",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_medium",
+      "task": "Mine some gold at the Arzinian mine.",
+      "condition": {
+        "name": "notMineGold",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikMedium.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Teleport to Trollheim.",
+      "condition": {
+        "name": "notTPTroll",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Catch a Sabre-toothed Kyatt.",
+      "condition": {
+        "name": "notCatchKyatt",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Mix a super defence potion in the Fremennik province.",
+      "condition": {
+        "name": "notMixSuperDef",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Steal from the Keldagrim Gem Stall.",
+      "condition": {
+        "name": "notStealGem",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Craft a Fremennik shield on Neitiznot.",
+      "condition": {
+        "name": "notCraftShield",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Mine 5 Adamantite ores on Jatizso.",
+      "condition": {
+        "name": "notMineAddy",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Obtain 100% support from your kingdom subjects.",
+      "condition": {
+        "name": "notMiscSupport",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Teleport to Waterbirth Island.",
+      "condition": {
+        "name": "notTPWaterbirth",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_hard",
+      "task": "Obtain the Blast Furnace Foreman's permission to use the Blast Furnace for free.",
+      "condition": {
+        "name": "notFreeBlast",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikHard.java"
+    },
+    {
+      "id": "fremennik_elite",
+      "task": "Craft 56 astral runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "notAstralRunes",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikElite.java"
+    },
+    {
+      "id": "fremennik_elite",
+      "task": "Create a dragonstone amulet in the Neitiznot furnace.",
+      "condition": {
+        "name": "notDragonAmulet",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikElite.java"
+    },
+    {
+      "id": "fremennik_elite",
+      "task": "Complete a lap of the Rellekka agility course.",
+      "condition": {
+        "name": "notRellRooftop",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikElite.java"
+    },
+    {
+      "id": "fremennik_elite",
+      "task": "Kill the generals of Armadyl, Bandos, Saradomin and Zamorak in the God Wars Dungeon.",
+      "condition": {
+        "name": "notGodwarsGenerals",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikElite.java"
+    },
+    {
+      "id": "fremennik_elite",
+      "task": "Slay a Spiritual mage within the Godwars Dungeon.",
+      "condition": {
+        "name": "notSpiritualMage",
+        "kind": "Varplayer",
+        "constant": "FREMENNIK_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/fremennik/FremennikElite.java"
+    },
+    {
+      "id": "kandarin_easy",
+      "task": "Catch a Mackerel at Catherby.",
+      "condition": {
+        "name": "notCatchMackerel",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinEasy.java"
+    },
+    {
+      "id": "kandarin_easy",
+      "task": "Plant some Jute seeds in the patch north of McGrubor's Wood.",
+      "condition": {
+        "name": "notPlantJute",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinEasy.java"
+    },
+    {
+      "id": "kandarin_easy",
+      "task": "Defeat one of each elemental in the workshop.",
+      "condition": {
+        "name": "notKillEle",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinEasy.java"
+    },
+    {
+      "id": "kandarin_easy",
+      "task": "Cross the Coal truck log shortcut.",
+      "condition": {
+        "name": "notLogShortcut",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinEasy.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Complete a lap of the Barbarian agility course.",
+      "condition": {
+        "name": "notBarbAgi",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Create a Super Antipoison potion from scratch in the Seers/Catherby Area.",
+      "condition": {
+        "name": "notSuperAnti",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Enter the Ranging guild.",
+      "condition": {
+        "name": "notEnterRange",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Use the grapple shortcut to get from the water obelisk to Catherby shore.",
+      "condition": {
+        "name": "notGrapOb",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Catch and cook a Bass in Catherby.",
+      "condition": {
+        "name": "notCatchCookBass",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Teleport to Camelot.",
+      "condition": {
+        "name": "notTPCam",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "String a Maple shortbow in Seers' Village bank.",
+      "condition": {
+        "name": "notStringMaple",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Pick some Limpwurt root from the farming patch in Catherby.",
+      "condition": {
+        "name": "notPickLimp",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Create a Mind helmet.",
+      "condition": {
+        "name": "notMindHelm",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Kill a Fire Giant inside Baxtorian Waterfall.",
+      "condition": {
+        "name": "notFireGiant",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Steal from the chest in Hemenster.",
+      "condition": {
+        "name": "notStealHemen",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Travel to McGrubor's Wood by Fairy Ring.",
+      "condition": {
+        "name": "notTravelMcGrubor",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_medium",
+      "task": "Mine some coal near the coal trucks.",
+      "condition": {
+        "name": "notMineCoal",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinMedium.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Catch a Leaping Sturgeon.",
+      "condition": {
+        "name": "notCatchSturgeon",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Complete a lap of the Seers' Village agility course.",
+      "condition": {
+        "name": "notSeersRooftop",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Create a Yew Longbow from scratch around Seers' Village.",
+      "condition": {
+        "name": "notYewLong",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Enter the Seers' Village courthouse with piety turned on.",
+      "condition": {
+        "name": "notPietyCourt",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Charge a Water Orb.",
+      "condition": {
+        "name": "notWaterOrb",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Burn some Maple logs with a bow in Seers' Village.",
+      "condition": {
+        "name": "notBurnMaple",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Kill a Shadow Hound in the Shadow dungeon.",
+      "condition": {
+        "name": "notShadowHound",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Purchase and equip a granite body from Barbarian Assault.",
+      "condition": {
+        "name": "notBuyGranite",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Have the Seers' estate agent decorate your house with Fancy Stone.",
+      "condition": {
+        "name": "notFancyStone",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_hard",
+      "task": "Smith an Adamant spear at Otto's Grotto.",
+      "condition": {
+        "name": "notAddySpear",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinHard.java"
+    },
+    {
+      "id": "kandarin_elite",
+      "task": "Pick some Dwarf weed from the herb patch at Catherby.",
+      "condition": {
+        "name": "notPickDwarf",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinElite.java"
+    },
+    {
+      "id": "kandarin_elite",
+      "task": "Fish and Cook 5 Sharks in Catherby using the Cooking gauntlets.",
+      "condition": {
+        "name": "not5Shark",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinElite.java"
+    },
+    {
+      "id": "kandarin_elite",
+      "task": "Mix a Stamina Mix on top of the Seers' Village bank.",
+      "condition": {
+        "name": "notStamMix",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinElite.java"
+    },
+    {
+      "id": "kandarin_elite",
+      "task": "Smith a Rune Hasta at Otto's Grotto.",
+      "condition": {
+        "name": "notRuneHasta",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinElite.java"
+    },
+    {
+      "id": "kandarin_elite",
+      "task": "Construct a Pyre ship from Magic Logs.(Requires Chewed Bones.)",
+      "condition": {
+        "name": "notPyre",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinElite.java"
+    },
+    {
+      "id": "kandarin_elite",
+      "task": "Teleport to Catherby.",
+      "condition": {
+        "name": "notTPCath",
+        "kind": "Varplayer",
+        "constant": "KANDARIN_ACHIEVEMENT_DIARY2",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kandarin/KandarinElite.java"
+    },
+    {
+      "id": "karamja_easy",
+      "task": "Mine some gold from the rocks on the north-west peninsula of Karamja.",
+      "condition": {
+        "name": "notMinedGold",
+        "kind": "Varbit",
+        "constant": "ATJUN_EASY_GOLD",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaEasy.java"
+    },
+    {
+      "id": "karamja_easy",
+      "task": "Explore Cairn Island to the west of Karamja.",
+      "condition": {
+        "name": "notGoneToCairn",
+        "kind": "Varbit",
+        "constant": "ATJUN_EASY_CAIRN",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaEasy.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Claim a ticket from the Agility Arena in Brimhaven.",
+      "condition": {
+        "name": "notClaimedTicket",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_AGILITY",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Discover hidden wall in the dungeon below the volcano.",
+      "condition": {
+        "name": "notEnteredWall",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_VOLCANO",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Visit the Isle of Crandor via the dungeon below the volcano.",
+      "condition": {
+        "name": "notEnteredCrandor",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_CRANDOR",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Use Vigroy and Hajedy's cart service.",
+      "condition": {
+        "name": "notUsedCart",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_CART",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Earn 100% favour in the village of Tai Bwo Wannai.",
+      "condition": {
+        "name": "notEarned100",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_CLEANUP",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Cook a spider on a stick.",
+      "condition": {
+        "name": "notCookedSpider",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_SPIDER",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Charter the Lady of the Waves from Cairn Isle to Port Khazard.",
+      "condition": {
+        "name": "notTraveledToKhazard",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_KHAZARD",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Cut a log from a teak tree.",
+      "condition": {
+        "name": "notCutTeak",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_TEAK",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Cut a log from a mahogany tree.",
+      "condition": {
+        "name": "notCutMahog",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_MAHOGANY",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Catch a karambwan.",
+      "condition": {
+        "name": "notCaughtKarambwan",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_KARAMBWAN",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Exchange gems for a machete.",
+      "condition": {
+        "name": "notExchangedGems",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_MACHETTE",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Use the gnome glider to travel to Karamja.",
+      "condition": {
+        "name": "notUsedGlider",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_GLIDER",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Grow a healthy fruit tree in the patch near Brimhaven.",
+      "condition": {
+        "name": "notGrownFruitTree",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_FARMING",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Trap a horned graahk.",
+      "condition": {
+        "name": "notTrappedGraahk",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_GRAAHK",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Chop the vines to gain deeper access to Brimhaven Dungeon.",
+      "condition": {
+        "name": "notCutVine",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_SHILO_VINES",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Cross the lava using the stepping stones within Brimhaven Dungeon.",
+      "condition": {
+        "name": "notCrossedLava",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_SHILO_LAVA",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Climb the stairs within Brimhaven Dungeon.",
+      "condition": {
+        "name": "notClimbedStairs",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_SHILO_STAIRS",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Charter a ship from the shipyard in the far east of Karamja.",
+      "condition": {
+        "name": "notCharteredFromShipyard",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_CHARTER",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_medium",
+      "task": "Mine a red topaz from a gem rock.",
+      "condition": {
+        "name": "notMinedRedRopaz",
+        "kind": "Varbit",
+        "constant": "ATJUN_MED_TOPAZ",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaMedium.java"
+    },
+    {
+      "id": "karamja_hard",
+      "task": "Craft some nature runes from Essence.",
+      "condition": {
+        "name": "notCraftedNature",
+        "kind": "Varbit",
+        "constant": "ATJUN_HARD_NATURE",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaHard.java"
+    },
+    {
+      "id": "karamja_hard",
+      "task": "Cook a karambwan thoroughly.",
+      "condition": {
+        "name": "notCookedKarambwan",
+        "kind": "Varbit",
+        "constant": "ATJUN_HARD_KARAMBWAN",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaHard.java"
+    },
+    {
+      "id": "karamja_hard",
+      "task": "Kill a deathwing in the dungeon under the Kharazi Jungle.",
+      "condition": {
+        "name": "notKilledDeathwing",
+        "kind": "Varbit",
+        "constant": "ATJUN_HARD_DEATHWING",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaHard.java"
+    },
+    {
+      "id": "karamja_hard",
+      "task": "Use the crossbow shortcut south of the volcano.",
+      "condition": {
+        "name": "notUsedShortcut",
+        "kind": "Varbit",
+        "constant": "ATJUN_HARD_XBOW",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaHard.java"
+    },
+    {
+      "id": "karamja_hard",
+      "task": "Collect 5 palm leaves.",
+      "condition": {
+        "name": "notCollectedLeaves",
+        "kind": "Varbit",
+        "constant": "ATJUN_HARD_PALM",
+        "value": "4, Operation.LESS_EQUAL"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaHard.java"
+    },
+    {
+      "id": "karamja_hard",
+      "task": "Be assigned a Slayer task by the Slayer Master in Shilo Village.",
+      "condition": {
+        "name": "notAssignedTask",
+        "kind": "Varbit",
+        "constant": "ATJUN_HARD_DURADEL",
+        "value": "0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaHard.java"
+    },
+    {
+      "id": "karamja_elite",
+      "task": "Craft 56 Nature runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "notCraftedRunes",
+        "kind": "Varplayer",
+        "constant": "ATJUN_TASKS_4",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaElite.java"
+    },
+    {
+      "id": "karamja_elite",
+      "task": "Check the health of a palm tree in Brimhaven.",
+      "condition": {
+        "name": "notCheckedPalm",
+        "kind": "Varplayer",
+        "constant": "ATJUN_TASKS_4",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaElite.java"
+    },
+    {
+      "id": "karamja_elite",
+      "task": "Create an antivenom potion whilst standing in the horse shoe mine.",
+      "condition": {
+        "name": "notMadePotion",
+        "kind": "Varplayer",
+        "constant": "ATJUN_TASKS_4",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaElite.java"
+    },
+    {
+      "id": "karamja_elite",
+      "task": "Check the health of your Calquat tree patch.",
+      "condition": {
+        "name": "notCheckedCalquat",
+        "kind": "Varplayer",
+        "constant": "ATJUN_TASKS_4",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/karamja/KaramjaElite.java"
+    },
+    {
+      "id": "kourend_kebos_easy",
+      "task": "Mine some Iron at the Mount Karuulm mine.",
+      "condition": {
+        "name": "notMineIron",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendEasy.java"
+    },
+    {
+      "id": "kourend_kebos_easy",
+      "task": "Steal from a Hosidius Food Stall.",
+      "condition": {
+        "name": "notStealFruit",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendEasy.java"
+    },
+    {
+      "id": "kourend_kebos_easy",
+      "task": "Enter your Player Owned House from Hosidius.",
+      "condition": {
+        "name": "notEnterPoh",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendEasy.java"
+    },
+    {
+      "id": "kourend_kebos_easy",
+      "task": "Create a Strength potion in the Lovakengj Pub.",
+      "condition": {
+        "name": "notStrengthPotion",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendEasy.java"
+    },
+    {
+      "id": "kourend_kebos_easy",
+      "task": "Fish a Trout from the River Molch.",
+      "condition": {
+        "name": "notFishTrout",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendEasy.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Travel to the Fairy Ring south of Mount Karuulm.",
+      "condition": {
+        "name": "notFairyRing",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Use Kharedst's memoirs to teleport to all five cities in Great Kourend.",
+      "condition": {
+        "name": "notTravelWithMemoirs",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Mine some Volcanic sulphur.",
+      "condition": {
+        "name": "notMineSulphur",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Enter the Farming Guild.",
+      "condition": {
+        "name": "notEnterFarmingGuild",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Repair a Piscarilius crane.",
+      "condition": {
+        "name": "notRepairCrane",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Catch a Bluegill on Molch Island.",
+      "condition": {
+        "name": "notCatchBluegill",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Use the boulder leap in the Arceuus essence mine.",
+      "condition": {
+        "name": "notUseBoulderShortcut",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Subdue the Wintertodt.",
+      "condition": {
+        "name": "notSubdueWintertodt",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Catch a Chinchompa in the Kourend Woodland.",
+      "condition": {
+        "name": "notCatchChinchompa",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_medium",
+      "task": "Chop some Mahogany logs north of the Farming Guild.",
+      "condition": {
+        "name": "notChopMahoganyTree",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendMedium.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Enter the Woodcutting Guild.",
+      "condition": {
+        "name": "notWoodcuttingGuild",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Smelt an Adamantite bar in The Forsaken Tower.",
+      "condition": {
+        "name": "notSmeltAddyBar",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Mine some Lovakite.",
+      "condition": {
+        "name": "notMineLovakite",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Plant some Logavano seeds at the Tithe Farm.",
+      "condition": {
+        "name": "notPlantLogavano",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Deliver an artefact to Captain Khaled.",
+      "condition": {
+        "name": "notDeliverArtifact",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Kill a Wyrm in the Karuulm Slayer Dungeon.",
+      "condition": {
+        "name": "notKillWyrm",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_hard",
+      "task": "Cast Monster Examine on a Troll south of Mount Quidamortem.",
+      "condition": {
+        "name": "notExamineMonster",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendHard.java"
+    },
+    {
+      "id": "kourend_kebos_elite",
+      "task": "Craft one or more Blood runes from Dark essence fragments.",
+      "condition": {
+        "name": "notCraftBloodRune",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendElite.java"
+    },
+    {
+      "id": "kourend_kebos_elite",
+      "task": "Chop some Redwood logs.",
+      "condition": {
+        "name": "notChopRedwood",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendElite.java"
+    },
+    {
+      "id": "kourend_kebos_elite",
+      "task": "Catch an Anglerfish and cook it whilst in Great Kourend.",
+      "condition": {
+        "name": "notCatchAngler",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendElite.java"
+    },
+    {
+      "id": "kourend_kebos_elite",
+      "task": "Kill a Hydra in the Karuulm Slayer Dungeon.",
+      "condition": {
+        "name": "notKillHydra",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendElite.java"
+    },
+    {
+      "id": "kourend_kebos_elite",
+      "task": "Create an Ape Atoll teleport tablet.",
+      "condition": {
+        "name": "notCreateTeleport",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendElite.java"
+    },
+    {
+      "id": "kourend_kebos_elite",
+      "task": "Create your own Battlestaff from scratch within the Farming Guild.",
+      "condition": {
+        "name": "notFletchBattlestaff",
+        "kind": "Varplayer",
+        "constant": "KOUREND_ACHIEVEMENT_DIARY2",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/kourend/KourendElite.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Slay a Cave bug beneath Lumbridge Swamp.",
+      "condition": {
+        "name": "notKillCaveBug",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Have Sedridor teleport you to the Essence Mine.",
+      "condition": {
+        "name": "notSedridor",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Craft some water runes from Essence.",
+      "condition": {
+        "name": "notWaterRune",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Chop and burn some oak logs in Lumbridge.",
+      "condition": {
+        "name": "notOak",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Catch some Anchovies in Al Kharid.",
+      "condition": {
+        "name": "notFishAnchovies",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Bake some Bread on the Lumbridge kitchen range.",
+      "condition": {
+        "name": "notBread",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_easy",
+      "task": "Mine some Iron ore at the Al Kharid mine.",
+      "condition": {
+        "name": "notIron",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeEasy.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Complete a lap of the Al Kharid agility course.",
+      "condition": {
+        "name": "notAlKharidRooftop",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Grapple across the River Lum.",
+      "condition": {
+        "name": "notGrappleLum",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Purchase an upgraded device from Ava.",
+      "condition": {
+        "name": "notUpgradeDevice",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Travel to the Wizards' Tower by Fairy ring.",
+      "condition": {
+        "name": "notWizardFairy",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Cast the teleport to Lumbridge spell.",
+      "condition": {
+        "name": "notTPlumb",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Catch some Salmon in Lumbridge.",
+      "condition": {
+        "name": "notCatchSalmon",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Craft a coif in the Lumbridge cow pen.",
+      "condition": {
+        "name": "notCraftCoif",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Chop some willow logs in Draynor Village.",
+      "condition": {
+        "name": "notChopWillow",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Pickpocket Martin the Master Gardener.",
+      "condition": {
+        "name": "notPickGardener",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Get a slayer task from Chaeldar.",
+      "condition": {
+        "name": "notChaeldarTask",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Catch an Essence or Eclectic impling in Puro-Puro.",
+      "condition": {
+        "name": "notPuroImp",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_medium",
+      "task": "Craft some Lava runes at the fire altar in Al Kharid.",
+      "condition": {
+        "name": "notCraftLava",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeMedium.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Cast Bones to Peaches in Al Kharid palace.",
+      "condition": {
+        "name": "notBonesToPeachesPalace",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Squeeze past the jutting wall on your way to the cosmic altar.",
+      "condition": {
+        "name": "notJuttingWall",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Craft 56 Cosmic runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "notCosmics",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Travel from Lumbridge to Edgeville on a Waka Canoe.",
+      "condition": {
+        "name": "notWakaToEdge",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Collect at least 100 Tears of Guthix in one visit.",
+      "condition": {
+        "name": "notHundredTears",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Take the train from Dorgesh-Kaan to Keldagrim.",
+      "condition": {
+        "name": "notTrainToKeld",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Purchase some Barrows gloves from the Lumbridge bank chest.",
+      "condition": {
+        "name": "notBarrowsGloves",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Pick some Belladonna from the farming patch at Draynor Manor.",
+      "condition": {
+        "name": "notBelladonna",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Light your mining helmet in the Lumbridge castle basement.",
+      "condition": {
+        "name": "notLightMiningHelm",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Recharge your prayer at the Emir's Arena with Smite activated.",
+      "condition": {
+        "name": "notSmiteAltar",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_hard",
+      "task": "Craft, string and enchant an Amulet of Power in Lumbridge.",
+      "condition": {
+        "name": "notPowerAmmy",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeHard.java"
+    },
+    {
+      "id": "lumbridge_draynor_elite",
+      "task": "Steal from a Dorgesh-Kaan rich chest.",
+      "condition": {
+        "name": "notRichChest",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeElite.java"
+    },
+    {
+      "id": "lumbridge_draynor_elite",
+      "task": "Grapple across a pylon on the Dorgesh-Kaan Agility Course.",
+      "condition": {
+        "name": "notGrapplePylon",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeElite.java"
+    },
+    {
+      "id": "lumbridge_draynor_elite",
+      "task": "Chop some magic logs at the Mage Training Arena.",
+      "condition": {
+        "name": "notChopMagic",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeElite.java"
+    },
+    {
+      "id": "lumbridge_draynor_elite",
+      "task": "Smith an Adamant platebody down Draynor sewer.",
+      "condition": {
+        "name": "notAddyPlatebody",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeElite.java"
+    },
+    {
+      "id": "lumbridge_draynor_elite",
+      "task": "Craft 140 or more Water runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "notWaterRunes",
+        "kind": "Varplayer",
+        "constant": "LUMB_DRAY_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/lumbridge/LumbridgeElite.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Craft any Snelm from scratch in Morytania.",
+      "condition": {
+        "name": "notCraftSnelm",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Cook a thin Snail on the Port Phasmatys range.",
+      "condition": {
+        "name": "notCookSnail",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Get a slayer task from the Slayer Master in Canifis.",
+      "condition": {
+        "name": "notMazchna",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Kill a Banshee in the Slayer Tower.",
+      "condition": {
+        "name": "notKillBanshee",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Place a Scarecrow in the Morytania flower patch.",
+      "condition": {
+        "name": "notPlaceScarecrow",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Kill a werewolf in its human form using the Wolfbane Dagger.",
+      "condition": {
+        "name": "notKillWerewolf",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_easy",
+      "task": "Restore your prayer points at the nature altar.",
+      "condition": {
+        "name": "notRestorePrayer",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaEasy.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Catch a swamp lizard.",
+      "condition": {
+        "name": "notSwampLizard",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Complete a lap of the Canifis agility course.",
+      "condition": {
+        "name": "notCanifisAgi",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Obtain some Bark from a Hollow tree.",
+      "condition": {
+        "name": "notHollowTree",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Kill a Terror Dog.",
+      "condition": {
+        "name": "notTerrorDog",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Complete a game of trouble brewing.",
+      "condition": {
+        "name": "notTroubleBrewing",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Make a batch of cannonballs at the Port Phasmatys furnace.",
+      "condition": {
+        "name": "notCannonBall",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Kill a Fever Spider on Braindeath Island.",
+      "condition": {
+        "name": "notFeverSpider",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Use an ectophial to return to Port Phasmatys.",
+      "condition": {
+        "name": "notEctophialTP",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_medium",
+      "task": "Mix a Guthix Balance potion while in Morytania.",
+      "condition": {
+        "name": "notGuthBalance",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaMedium.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Enter the Kharyrll portal in your POH.",
+      "condition": {
+        "name": "notKharyrll",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Climb the advanced spike chain within Slayer Tower.",
+      "condition": {
+        "name": "notAdvancedSpikes",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Harvest some Watermelon from the Allotment patch on Harmony Island.",
+      "condition": {
+        "name": "notHarvestWatermelon",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Chop and burn some mahogany logs on Mos Le'Harmless.",
+      "condition": {
+        "name": "notBurnMaho",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Complete a temple trek with a hard companion.",
+      "condition": {
+        "name": "notHardTempleTrekk",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Kill a Cave Horror.",
+      "condition": {
+        "name": "notCaveHorror",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Harvest some Bittercap Mushrooms from the patch in Canifis.",
+      "condition": {
+        "name": "notBittercapMush",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Pray at the Altar of Nature with Piety activated.",
+      "condition": {
+        "name": "notPietyAltar",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Use the shortcut to get to the bridge over the Salve.",
+      "condition": {
+        "name": "notBridgeSalve",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_hard",
+      "task": "Mine some Mithril ore in the Abandoned Mine.",
+      "condition": {
+        "name": "notMithOre",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaHard.java"
+    },
+    {
+      "id": "morytania_elite",
+      "task": "Catch a shark in Burgh de Rott with your bare hands.",
+      "condition": {
+        "name": "notBareHandShark",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaElite.java"
+    },
+    {
+      "id": "morytania_elite",
+      "task": "Cremate any Shade remains on a Magic or Redwood pyre.",
+      "condition": {
+        "name": "notCremateShade",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaElite.java"
+    },
+    {
+      "id": "morytania_elite",
+      "task": "Fertilize the Morytania herb patch using Lunar Magic.",
+      "condition": {
+        "name": "notFertilizeHerb",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaElite.java"
+    },
+    {
+      "id": "morytania_elite",
+      "task": "Craft a Black dragonhide body in Canifis bank.",
+      "condition": {
+        "name": "notCraftBlackDhideBody",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaElite.java"
+    },
+    {
+      "id": "morytania_elite",
+      "task": "Kill an Abyssal demon in the Slayer Tower.",
+      "condition": {
+        "name": "notAbyssalDemon",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaElite.java"
+    },
+    {
+      "id": "morytania_elite",
+      "task": "Loot the Barrows chest while wearing any complete barrows set.",
+      "condition": {
+        "name": "notBarrowsChest",
+        "kind": "Varplayer",
+        "constant": "MORYTANIA_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/morytania/MorytaniaElite.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Have Aubury teleport you to the Essence mine.",
+      "condition": {
+        "name": "notAubury",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Mine some Iron in the south east mining patch near Varrock.",
+      "condition": {
+        "name": "notIron",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Jump over the fence south of Varrock.",
+      "condition": {
+        "name": "notFence",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Spin a bowl on the pottery wheel and fire it in the oven in Barb Village.",
+      "condition": {
+        "name": "notBowl",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Craft some Earth runes from Essence.",
+      "condition": {
+        "name": "notEarthRune",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Catch some trout in the River Lum at Barbarian Village.",
+      "condition": {
+        "name": "notTrout",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_easy",
+      "task": "Steal from the Tea stall in Varrock.",
+      "condition": {
+        "name": "notTeaStall",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockEasy.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Enter the Champions' Guild.",
+      "condition": {
+        "name": "notChamps",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Select a colour for your kitten.",
+      "condition": {
+        "name": "notCatColour",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Use the spirit tree north of Varrock.",
+      "condition": {
+        "name": "notGESpirit",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Enter the Tolna dungeon after completing A Soul's Bane.",
+      "condition": {
+        "name": "notTolna",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Teleport to the digsite using a Digsite pendant.",
+      "condition": {
+        "name": "notTPDigsite",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Cast the teleport to Varrock spell.",
+      "condition": {
+        "name": "notTPVarrock",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Get a Slayer task from Vannaka.",
+      "condition": {
+        "name": "notVannaka",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Pick a White tree fruit.",
+      "condition": {
+        "name": "notWhiteFruit",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Use the balloon to travel from Varrock.",
+      "condition": {
+        "name": "notBalloon",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_medium",
+      "task": "Complete a lap of the Varrock Agility course.",
+      "condition": {
+        "name": "notVarrAgi",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockMedium.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Trade furs with the Fancy Dress Seller for a spottier cape and equip it.",
+      "condition": {
+        "name": "notSpottyCape",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Make a Waka Canoe near Edgeville.",
+      "condition": {
+        "name": "notWakkaEdge",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Teleport to Paddewwa.",
+      "condition": {
+        "name": "notPaddewwaTP",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Chop some yew logs in Varrock and burn them at the top of the Varrock church.",
+      "condition": {
+        "name": "notYewChurch",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Have the Varrock estate agent decorate your house with Fancy Stone.",
+      "condition": {
+        "name": "notFancyStone",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Collect at least 2 yew roots from the Tree patch in Varrock Palace.",
+      "condition": {
+        "name": "notYewRoots",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Pray at the altar in Varrock palace with Smite active.",
+      "condition": {
+        "name": "notSmiteAltar",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_hard",
+      "task": "Squeeze through the obstacle pipe in Edgeville dungeon.",
+      "condition": {
+        "name": "notPipe",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockHard.java"
+    },
+    {
+      "id": "varrock_elite",
+      "task": "Create a super combat potion in Varrock west bank.",
+      "condition": {
+        "name": "notSuperCombat",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockElite.java"
+    },
+    {
+      "id": "varrock_elite",
+      "task": "Use Lunar magic to make 20 mahogany planks at the Lumberyard.",
+      "condition": {
+        "name": "notPlankMake",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockElite.java"
+    },
+    {
+      "id": "varrock_elite",
+      "task": "Bake a summer pie in the Cooking Guild.",
+      "condition": {
+        "name": "notSummerPie",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockElite.java"
+    },
+    {
+      "id": "varrock_elite",
+      "task": "Smith and fletch ten rune darts within Varrock.",
+      "condition": {
+        "name": "notRuneDart",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockElite.java"
+    },
+    {
+      "id": "varrock_elite",
+      "task": "Craft 100 or more earth runes simultaneously from Essence without the use of Extracts.",
+      "condition": {
+        "name": "not100Earth",
+        "kind": "Varplayer",
+        "constant": "VARROCK_ACHIEVEMENT_DIARY2",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/varrock/VarrockElite.java"
+    },
+    {
+      "id": "western_provinces_easy",
+      "task": "Catch a Copper Longtail.",
+      "condition": {
+        "name": "notCopperLongtail",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternEasy.java"
+    },
+    {
+      "id": "western_provinces_easy",
+      "task": "Complete a novice game of Pest Control.",
+      "condition": {
+        "name": "notNovicePest",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternEasy.java"
+    },
+    {
+      "id": "western_provinces_easy",
+      "task": "Mine some Iron Ore near Piscatoris.",
+      "condition": {
+        "name": "notMineIron",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternEasy.java"
+    },
+    {
+      "id": "western_provinces_easy",
+      "task": "Claim any Chompy bird hat from Rantz.",
+      "condition": {
+        "name": "notChompyHat",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternEasy.java"
+    },
+    {
+      "id": "western_provinces_easy",
+      "task": "Have Brimstail teleport you to the Essence Mine.",
+      "condition": {
+        "name": "notBrimstailEssence",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternEasy.java"
+    },
+    {
+      "id": "western_provinces_easy",
+      "task": "Fletch an Oak Shortbow in the Gnome Stronghold.",
+      "condition": {
+        "name": "notOakShortbow",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternEasy.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Take the agility shortcut from the Grand Tree to Otto's Grotto.",
+      "condition": {
+        "name": "notAgiShortcut",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 12"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Travel to the Gnome Stronghold by Spirit Tree.",
+      "condition": {
+        "name": "notSpiritToStronghold",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Trap a Spined Larupia.",
+      "condition": {
+        "name": "notSpinedLarupia",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Fish some Bass on Ape Atoll.",
+      "condition": {
+        "name": "notApeBass",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Chop and burn some teak logs on Ape Atoll.",
+      "condition": {
+        "name": "notApeTeak",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Complete an intermediate game of Pest Control.",
+      "condition": {
+        "name": "notInterPest",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 17"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Travel to the Feldip Hills by Gnome Glider.",
+      "condition": {
+        "name": "notGliderToFeldip",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 18"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Claim a Chompy bird hat from Rantz after registering at least 125 kills.",
+      "condition": {
+        "name": "notChompyHat",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 19"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Travel from Eagles' Peak to the Feldip Hills by Eagle.",
+      "condition": {
+        "name": "notEagleFeldip",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Make a Chocolate Bomb at the Grand Tree.",
+      "condition": {
+        "name": "notChocolateBomb",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Complete a delivery for the Gnome Restaurant.",
+      "condition": {
+        "name": "notGnomeDelivery",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 22"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Turn your small crystal seed into a Crystal saw.",
+      "condition": {
+        "name": "notCrystalSaw",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_medium",
+      "task": "Mine some Gold ore underneath the Grand Tree.",
+      "condition": {
+        "name": "notMineGold",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 24"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternMedium.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Kill an Elf with a Crystal bow.",
+      "condition": {
+        "name": "notElfCystalBow",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Catch and cook a Monkfish in Piscatoris.",
+      "condition": {
+        "name": "notMonkfishPisc",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Complete a Veteran game of Pest Control.",
+      "condition": {
+        "name": "notVetPest",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Catch a Dashing Kebbit.",
+      "condition": {
+        "name": "notDashingKebbit",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Complete a lap of the Ape Atoll agility course.",
+      "condition": {
+        "name": "notApeAtollAgi",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 29"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Chop and burn some Mahogany logs on Ape Atoll.",
+      "condition": {
+        "name": "notMahoganyBurned",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 30"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Mine some Adamantite ore in Tirannwn.",
+      "condition": {
+        "name": "notMineAddyOre",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY",
+        "value": "false, 31"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Check the health of your Palm tree in Lletya.",
+      "condition": {
+        "name": "notLletyaPalm",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Claim a Chompy bird hat from Rantz after registering at least 300 kills.",
+      "condition": {
+        "name": "notChompyHat",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Build an Isafdar painting in your POH Quest hall.",
+      "condition": {
+        "name": "notIsafdarPainting",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Kill Zulrah.",
+      "condition": {
+        "name": "notKillZulrah",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 3"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Teleport to Ape Atoll.",
+      "condition": {
+        "name": "notTPApe",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 4"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_hard",
+      "task": "Pickpocket a Gnome.",
+      "condition": {
+        "name": "notPickpocketGnome",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternHard.java"
+    },
+    {
+      "id": "western_provinces_elite",
+      "task": "Fletch a Magic Longbow in Tirannwn.",
+      "condition": {
+        "name": "notMagicLong",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternElite.java"
+    },
+    {
+      "id": "western_provinces_elite",
+      "task": "Kill the Thermonuclear Smoke devil (Does not require task).",
+      "condition": {
+        "name": "notKillThermy",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternElite.java"
+    },
+    {
+      "id": "western_provinces_elite",
+      "task": "Have Prissy Scilla protect your Magic tree.",
+      "condition": {
+        "name": "notPrissyScilla",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternElite.java"
+    },
+    {
+      "id": "western_provinces_elite",
+      "task": "Use the Elven overpass advanced cliffside shortcut.",
+      "condition": {
+        "name": "notAdvancedAgi",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternElite.java"
+    },
+    {
+      "id": "western_provinces_elite",
+      "task": "Claim a Chompy bird hat from Rantz after registering at least 1000 kills.",
+      "condition": {
+        "name": "notChompyHat",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternElite.java"
+    },
+    {
+      "id": "western_provinces_elite",
+      "task": "Pickpocket an Elf.",
+      "condition": {
+        "name": "notPickpocketElf",
+        "kind": "Varplayer",
+        "constant": "WESTERN_ACHIEVEMENT_DIARY2",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/western/WesternElite.java"
+    },
+    {
+      "id": "wilderness_easy",
+      "task": "Cast Low Alchemy at the Fountain of Rune.",
+      "condition": {
+        "name": "notLowAlch",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessEasy.java"
+    },
+    {
+      "id": "wilderness_easy",
+      "task": "Kill an Earth Warrior in the Wilderness beneath Edgeville.",
+      "condition": {
+        "name": "notEarthWarrior",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 6"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessEasy.java"
+    },
+    {
+      "id": "wilderness_easy",
+      "task": "Mine some Iron ore in the Wilderness.",
+      "condition": {
+        "name": "notIronOre",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessEasy.java"
+    },
+    {
+      "id": "wilderness_easy",
+      "task": "Have the Mage of Zamorak teleport you to the Abyss.",
+      "condition": {
+        "name": "notEnterAbyss",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessEasy.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Mine some Mithril ore in the wilderness.",
+      "condition": {
+        "name": "notMineMith",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 13"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Chop some yew logs from a fallen Ent.",
+      "condition": {
+        "name": "notEntYew",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 14"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Enter the Wilderness Godwars Dungeon.",
+      "condition": {
+        "name": "notWildyGodWars",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 15"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Complete a lap of the Wilderness Agility course.",
+      "condition": {
+        "name": "notWildyAgi",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 16"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Charge an Earth Orb.",
+      "condition": {
+        "name": "notEarthOrb",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 20"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Kill a Bloodveld in the Wilderness Godwars Dungeon.",
+      "condition": {
+        "name": "notWildyGWBloodveld",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 21"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_medium",
+      "task": "Smith a Golden helmet in the Resource Area.",
+      "condition": {
+        "name": "notGoldHelm",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 23"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessMedium.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Cast one of the 3 God spells against another player in the Wilderness.",
+      "condition": {
+        "name": "notGodSpells",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 25"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Charge an Air Orb.",
+      "condition": {
+        "name": "notAirOrb",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 26"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Catch a Black Salamander in the Wilderness.",
+      "condition": {
+        "name": "notBlackSally",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 27"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Smith an Adamant scimitar in the Resource Area.",
+      "condition": {
+        "name": "notAddyScim",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY",
+        "value": "false, 28"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Take the agility shortcut from Trollheim into the Wilderness.",
+      "condition": {
+        "name": "notTrollWildy",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 0"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Kill a Spiritual warrior in the Wilderness Godwars Dungeon.",
+      "condition": {
+        "name": "notSprirtualWarrior",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 1"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_hard",
+      "task": "Fish some Raw Lava Eel in the Wilderness.",
+      "condition": {
+        "name": "notRawLavaEel",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 2"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessHard.java"
+    },
+    {
+      "id": "wilderness_elite",
+      "task": "Teleport to Ghorrock.",
+      "condition": {
+        "name": "notTPGhorrock",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 5"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessElite.java"
+    },
+    {
+      "id": "wilderness_elite",
+      "task": "Fish and Cook a Dark Crab in the Resource Area.",
+      "condition": {
+        "name": "notDarkCrab",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 7"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessElite.java"
+    },
+    {
+      "id": "wilderness_elite",
+      "task": "Smith a rune scimitar from scratch in the Resource Area.",
+      "condition": {
+        "name": "notRuneScim",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 8"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessElite.java"
+    },
+    {
+      "id": "wilderness_elite",
+      "task": "Steal from the Rogues' chest.",
+      "condition": {
+        "name": "notRoguesChest",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 9"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessElite.java"
+    },
+    {
+      "id": "wilderness_elite",
+      "task": "Slay a spiritual mage inside the wilderness Godwars Dungeon.",
+      "condition": {
+        "name": "notSpiritMage",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 10"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessElite.java"
+    },
+    {
+      "id": "wilderness_elite",
+      "task": "Cut and burn some magic logs in the Resource Area.",
+      "condition": {
+        "name": "notMagicLogs",
+        "kind": "Varplayer",
+        "constant": "WILDERNESS_ACHIEVEMENT_DIARY2",
+        "value": "false, 11"
+      },
+      "source": "https://github.com/Zoinkwiz/quest-helper/blob/06da90f982518a093f2fe1c9cfac5547fa7053d3/src/main/java/com/questhelper/helpers/achievementdiaries/wilderness/WildernessElite.java"
+    }
+  ],
+  "questHelperCommit": "06da90f982518a093f2fe1c9cfac5547fa7053d3"
+}
